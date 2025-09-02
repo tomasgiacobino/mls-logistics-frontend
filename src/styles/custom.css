@@ -1,0 +1,134 @@
+:root {
+    --bs-primary: #0A2342; /* Azul marino */
+    --bs-secondary: #E9F1F7; /* Gris claro */
+    --bs-info: #0077B6; /* Azul cian (para acentos) */
+    --bs-dark: #2C3E50; /* Gris oscuro */
+    --bs-light: #F8F9FA; /* Blanco */
+  }
+
+  /* Transición suave para los componentes de la página */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+
+
+/* SECCION HERO */
+
+  .hero-section{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+
+.hero-content {
+  position: relative;
+  z-index: 2; 
+}
+
+/* SECCION HERO */
+
+/* SECCION ServiceCard */
+
+.card-hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.03); /* Se eleva y se expande ligeramente */
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* Aumenta la sombra */
+}
+
+/* SECCION ServiceCard */
+
+/* SECCION Curso */
+/* Estilo para el hover de las tarjetas del curso */
+.course-card-content {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Necesario para que la transformación funcione correctamente */
+}
+
+.course-card-content:hover {
+  transform: scale(1.1); /* Escala el elemento 1.1 veces su tamaño original */
+}
+
+/* SECCION Curso */
+
+
+/* SECCION Aereo */
+.hero-aereo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-aereo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.aereo-content {
+  position: relative;
+  z-index: 2; 
+}
+
+/* SECCION Aereo */
+
+/* SECCION Maritimo */
+.hero-maritimo {
+  background-size: cover;
+  background-position: 50% 90%;
+  background-repeat: no-repeat;
+  min-height: 70vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-maritimo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.maritimo-content {
+  position: relative;
+  z-index: 2; 
+}
+
+/* SECCION Maritimo */
