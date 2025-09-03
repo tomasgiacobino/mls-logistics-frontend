@@ -10,7 +10,9 @@ import Loading from './components/Loading';
 const Home = React.lazy(() => import('./pages/Home'));
 const Curso = React.lazy(() => import('./pages/Curso'));
 const Aerea = React.lazy(() => import('./pages/Aerea'));
-const Maritima = React.lazy(() => import('./pages/Maritima'));
+const Maritima = React.lazy(() => import('./pages/Maritima'));    
+const Importador = React.lazy(() => import('./pages/Importador'));
+const Exportacion = React.lazy(() => import('./pages/Exportacion'));
 // ... y las otras páginas que creaste
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
           <Route path="/curso" element={<Curso />} />
           <Route path='/importacionAerea' element={<Aerea />} />
           <Route path='/importacionMaritima' element={<Maritima />} />
-          {/* ... otras rutas aquí */}
+          <Route path='/importador' element={<Importador />} />
+          <Route path='/exportacion' element={<Exportacion />} />
         </Routes>
       </Suspense>
       <Footer />

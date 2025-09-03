@@ -34,7 +34,7 @@ const Services = () => {
             title="Inscripción como importador 📝"
             description="Trae la importación a tu nombre y obtené los beneficios impositivos para mejorar tus márgenes."
             buttonText="Conocer más"
-            to="/inscripcion-importador"
+            to="/importador"
           />
           <ServiceCard
             icon="bi-globe-americas"

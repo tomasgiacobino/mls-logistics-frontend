@@ -127,7 +127,7 @@ const CotizacionAerea = () => {
           <Row className="justify-content-center">
             <Col lg={8} className="text-center">
               <h4 className="fw-bold mb-4">
-                A continuación te adjuntamos una MINI GUÍA GRATUITA
+                A continuación te adjuntamos una <span className='text-info'> MINI GUÍA GRATUITA </span>
               </h4>
               <p className="lead">
                 Para que entiendas el paso a paso del proceso de importación aérea y estés preparado.

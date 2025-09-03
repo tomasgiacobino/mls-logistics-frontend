@@ -106,14 +106,14 @@ const Curso = () => {
               
               <ListGroup as="ul" className="mb-4">
                 <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0 mb-3">
-                  <FaVideo className="h4 text-info me-3" />
+                  <FaVideo className="fs-4 text-info me-3" />
                   <div>
                     <h5 className="fw-bold">Videos explicativos</h5>
                     <p>Incluye videos que acompañan la guía para que lo entiendas de forma visual y práctica.</p>
                   </div>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0">
-                  <FaComments className="h4 text-info me-3" />
+                  <FaComments className="fs-1 text-info me-3" />
                   <div>
                     <h5 className="fw-bold">Asesoramiento personalizado</h5>
                     <p>Tendrás un asesoramiento mano a mano con Manu Muñoz, una sesión exclusiva de 1 hora por Google Meet donde vas a poder resolver todas tus dudas y recibir consejos personalizados según tu proyecto.</p>

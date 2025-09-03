@@ -1,75 +1,88 @@
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import type { FormEvent } from 'react';
+// src/components/Contact.tsx
+import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button, InputGroup } from 'react-bootstrap';
+import { FaWhatsapp, FaEnvelope, FaCopy } from 'react-icons/fa';
 
 const Contact = () => {
+  const [showCopyMessage, setShowCopyMessage] = useState(false);
+  const whatsappMessage = encodeURIComponent('Hola, me contacto para pedirte más información sobre MLS International Logistics');
+  const whatsappNumber = 'tunumerodewhatsapp';
+  const emailAddress = 'tumail@ejemplo.com';
 
-    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
+  const handleWhatsappClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
+  };
 
-        const name = (document.getElementById('formBasicName') as HTMLInputElement).value;
-        const email = (document.getElementById('formBasicEmail') as HTMLInputElement).value;
-        const phone = (document.getElementById('formBasicPhone') as HTMLInputElement).value;
-        const message = (document.getElementById('formBasicMessage') as HTMLTextAreaElement).value;
-
-
-        const whatsappMessage = `¡Hola!%20Mi%20nombre%20es%20${name},%20mi%20email%20es%20${email}%20y%20mi%20teléfono%20es%20${phone}.%20Te%20quiero%20consultar%20por:%20${message}`;
-
-        const whatsappLink = `https://wa.me/543874069341?text=${whatsappMessage}`;
-
-        window.open(whatsappLink, '_blank');
-    }
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText(emailAddress);
+    setShowCopyMessage(true);
+    setTimeout(() => {
+      setShowCopyMessage(false);
+    }, 2000); // El mensaje se oculta después de 2 segundos
+  };
 
   return (
     <section className="py-5" id="contact">
+      <style type="text/css">
+        {`
+          .email-copy-container {
+            position: relative;
+          }
+          .copy-message {
+            position: absolute;
+            bottom: -25px; /* Ajusta la distancia del mensaje */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            white-space: nowrap;
+          }
+          .copy-message.show {
+            opacity: 1;
+          }
+        `}
+      </style>
       <Container>
-        <h2 className="text-center mb-5 text-primary">Cotiza tu proyecto</h2>
         <Row className="justify-content-center">
-          <Col lg={6} md={12}>
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Label>Nombre y Apellido</Form.Label>
-                <Form.Control type="text" placeholder="Ingresa tu nombre" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Correo Electrónico</Form.Label>
-                <Form.Control type="email" placeholder="Ingresa tu email" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicPhone">
-                <Form.Label>Teléfono</Form.Label>
-                <Form.Control type="tel" placeholder="Ingresa tu teléfono" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicMessage">
-                <Form.Label>Mensaje</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Cuéntanos sobre tu proyecto (ej: tipo de carga, origen, destino)" />
-              </Form.Group>
-
-              <Button variant="success" type="submit" className="w-100">
-                Enviar Consulta
-              </Button>
-            </Form>
+          <Col md={10} className="text-center">
+            <h2 className="fw-bold mb-4">Cotiza tu proyecto</h2>
+            <p className="text-muted mb-5">
+              ¿Listo para empezar? Contáctanos y obtén una cotización en menos de 24 horas.
+            </p>
+            <Row className="justify-content-center">
+              <Col xs={12} sm={6} md={5} lg={4} className="mb-3 mb-sm-0">
+                <Button
+                  variant="success"
+                  size="lg"
+                  className="w-100"
+                  onClick={handleWhatsappClick}
+                >
+                  <FaWhatsapp className="me-2" /> Contáctanos por WhatsApp
+                </Button>
+              </Col>
+              <Col xs={12} sm={6} md={5} lg={4}>
+                <div className="email-copy-container">
+                  <InputGroup size="lg" className="w-100">
+                    <InputGroup.Text className="bg-primary text-white border-primary">
+                      <FaEnvelope />
+                    </InputGroup.Text>
+                    <Form.Control
+                      type="text"
+                      value={emailAddress}
+                      readOnly
+                      className="bg-white text-dark border-primary"
+                    />
+                    <Button variant="outline-primary" onClick={copyEmailToClipboard}>
+                      <FaCopy />
+                    </Button>
+                  </InputGroup>
+                  <small className={`text-success fw-bold copy-message ${showCopyMessage ? 'show' : ''}`}>
+                    ¡Email copiado!
+                  </small>
+                </div>
+              </Col>
+            </Row>
           </Col>
-          {/* <Col md={6} className="text-center">
-            <h3 className="text-primary mb-4">Información de Contacto</h3>
-            <p>
-              <i className="bi bi-geo-alt-fill text-info me-2"></i>
-              Tu Dirección aquí
-            </p>
-            <p>
-              <i className="bi bi-envelope-fill text-info me-2"></i>
-              info@mlslogistics.com
-            </p>
-            <p>
-              <i className="bi bi-telephone-fill text-info me-2"></i>
-              +54 9 11 1234-5678
-            </p>
-            <p>
-              <i className="bi bi-whatsapp text-info me-2"></i>
-              <a href="" target="_blank" rel="noopener noreferrer">Envía un WhatsApp</a>
-            </p>
-          </Col> */}
         </Row>
       </Container>
     </section>

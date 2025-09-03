@@ -4,7 +4,7 @@ import Partners from '../sections/Partners';
 // import About from '../sections/About';
 import Services from '../sections/Services';
 import Blog from '../sections/Blog';
-// import Contact from '../sections/Contact';
+import Contact from '../sections/Contact';
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       {/* <About /> */}
       <Services />
       <Blog />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };
