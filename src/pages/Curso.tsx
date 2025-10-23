@@ -1,10 +1,23 @@
 import { Container, Row, Col, ListGroup, Card, Button } from 'react-bootstrap';
-import { FaDownload, FaShoppingCart, FaVideo, FaComments, FaBook, FaFileAlt, FaCalculator, FaShip, FaQuestionCircle, FaChartLine, FaClipboardList, FaMapSigns, FaExclamationTriangle, FaDollarSign } from 'react-icons/fa';
+import { FaDownload, FaShoppingCart, FaPlay, FaComments, FaBook, FaFile, FaCalculator, FaShip, FaQuestionCircle, FaArrowUp, FaClipboard, FaMapSigns, FaExclamationTriangle, FaCheckCircle } from 'react-icons/fa';
+import axios from 'axios';
 import CourseLearningCard from '../components/CourseLearningCard';
 import BenefitItem from '../components/BenefitItem';
 import guiaCurso from '../assets/pdfs/guiaCurso.pdf';
 
 const Curso = () => {
+
+  const handleBuyClick = async () => {
+    try{
+      const response = await axios.post<{ sandbox_init_point: string }>('http://localhost:5000/create-order');
+      const sandboxUrl = response.data.sandbox_init_point;
+        window.location.href = sandboxUrl;
+    }catch (error){
+      console.error('Error al iniciar el proceso de pago:', error);
+      alert('Hubo un error al procesar tu solicitud. Por favor, inténtalo de nuevo.');
+    }
+  }
+
   return (
     <>
       <section className="py-5">
@@ -39,7 +52,7 @@ const Curso = () => {
                     description="Cómo contactar y negociar con proveedores internacionales."
                   />
                   <CourseLearningCard
-                    icon={FaFileAlt}
+                    icon={FaFile}
                     title="Documentación Clave"
                     description="Qué son y cómo usar documentos claves como la Proforma Invoice y el Packing List."
                   />
@@ -59,7 +72,7 @@ const Curso = () => {
                     description="Definiciones y uso de los Incoterms."
                   />
                   <CourseLearningCard
-                    icon={FaChartLine}
+                    icon={FaArrowUp}
                     title="Estrategias de Negocio"
                     description="Estrategias para reducir riesgos, ahorrar costos y garantizar que tu operación sea exitosa."
                   />
@@ -77,7 +90,7 @@ const Curso = () => {
               <h3 className="text-center text-primary fw-bold mb-5">💡 ¿Qué vas a poder hacer?</h3>
               <Row className="justify-content-center">
                 <BenefitItem
-                  icon={FaClipboardList}
+                  icon={FaClipboard}
                   description="Cotizar tus envíos de forma profesional."
                 />
                 <BenefitItem
@@ -89,7 +102,7 @@ const Curso = () => {
                   description="Evitar los errores más comunes de los primeros importadores."
                 />
                 <BenefitItem
-                  icon={FaDollarSign}
+                  icon={FaCheckCircle}
                   description="Tomar decisiones con seguridad para escalar tu negocio y aumentar tu rentabilidad."
                 />
               </Row>
@@ -106,7 +119,7 @@ const Curso = () => {
               
               <ListGroup as="ul" className="mb-4">
                 <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0 mb-3">
-                  <FaVideo className="fs-4 text-info me-3" />
+                  <FaPlay className="fs-4 text-info me-3" />
                   <div>
                     <h5 className="fw-bold">Videos explicativos</h5>
                     <p>Incluye videos que acompañan la guía para que lo entiendas de forma visual y práctica.</p>
@@ -126,7 +139,7 @@ const Curso = () => {
                 <h4 className="fw-bold mb-3">Empieza hoy tu camino en el comercio internacional</h4>
                 <p>Hacé crecer tu negocio con conocimiento real, práctico y aplicado.</p>
                 <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  <Button variant="info" className="fw-bold">
+                  <Button variant="info" className="fw-bold" onClick={handleBuyClick}>
                     <FaShoppingCart className="me-2" />
                     Comprar Asesoramiento
                   </Button>

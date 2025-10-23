@@ -2,8 +2,8 @@ import { Container, Row } from 'react-bootstrap';
 import BlogCard from '../components/BlogCard';
 
 import blogImage1 from '../assets/images/camion1.jpg';
-import blogImage2 from '../assets/images/camion2.jpg';
-import blogImage3 from '../assets/images/camion3.jpg';
+import blogImage2 from '../assets/images/avion1.jpg';
+import blogImage3 from '../assets/images/avion2.jpg';
 
 const blogPosts = [
     {

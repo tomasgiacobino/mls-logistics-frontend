@@ -1,6 +1,6 @@
 // src/pages/CotizacionAerea.tsx
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaPhone, FaFileAlt, FaFileInvoice, FaClipboardList, FaDownload, FaWhatsapp } from 'react-icons/fa';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaPhone, FaFile, FaClipboard, FaDownload } from 'react-icons/fa';
 import GuiaImportacionAereaPDF from '../assets/pdfs/guiaAerea.pdf';
 import fondoAvion from '../assets/images/avion4.jpg'
 import WhatsappForm from '../components/WhatsappForm';
@@ -47,8 +47,8 @@ const CotizacionAerea = () => {
                         Contamos con depósito en China y Estados Unidos y somos partners oficiales de DHL, FedEx y Ups. ¡Obtené tu cotización en menos de 24 horas!
                     </p>
                     <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
-                        <FaFileInvoice className="h1" />
-                        <FaClipboardList className="h1" />
+                        <FaFile className="h1" />
+                        <FaClipboard className="h1" />
                         <FaPhone className="h1" />
                     </div>
                     </Col>
@@ -80,21 +80,21 @@ const CotizacionAerea = () => {
               <Row className="g-4 mt-4">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaFileInvoice className="h1 text-info mx-auto mb-3" />
+                    <FaFile className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Invoice Proforma</Card.Title>
                     <Card.Text>(Modelo de factura)</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaClipboardList className="h1 text-info mx-auto mb-3" />
+                    <FaClipboard className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Packing List</Card.Title>
                     <Card.Text>El detalle completo de tu carga.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaFileAlt className="h1 text-info mx-auto mb-3" />
+                    <FaFile className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">HS Code</Card.Title>
                     <Card.Text>Código de clasificación aduanera.</Card.Text>
                   </Card>

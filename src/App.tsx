@@ -5,6 +5,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
+import SuccessPage from './pages/MP/SuccessPage';
+import FailurePage from './pages/MP/FailurePage';
+import PendingPage from './pages/MP/PendingPage';
+
 
 // Carga diferida de las páginas para optimizar el rendimiento
 const Home = React.lazy(() => import('./pages/Home'));
@@ -27,6 +31,9 @@ function App() {
           <Route path='/importacionMaritima' element={<Maritima />} />
           <Route path='/importador' element={<Importador />} />
           <Route path='/exportacion' element={<Exportacion />} />
+          <Route path="/success" element={<SuccessPage />} />
+          <Route path="/failure" element={<FailurePage />} />
+          <Route path="/pending" element={<PendingPage />} />
         </Routes>
       </Suspense>
       <Footer />

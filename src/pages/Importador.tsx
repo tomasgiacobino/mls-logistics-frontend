@@ -1,7 +1,7 @@
 // src/pages/Importador.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaShieldAlt, FaChartLine, FaGavel, FaHandshake, FaWallet } from 'react-icons/fa';
-import { FaFileInvoiceDollar, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
+import { FaShieldAlt, FaArrowUp, FaGavel, FaUser, FaCreditCard } from 'react-icons/fa';
+import { FaFile, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
 import fondoImportador from '../assets/images/camion3.jpg'; // Asegúrate de tener una imagen de fondo
 
 const Importador = () => {
@@ -46,7 +46,7 @@ const Importador = () => {
             </Col>
             <Col md={6} lg={3}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaFileInvoiceDollar className="h1 text-info mx-auto mb-3" />
+                <FaFile className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Registro en AFIP</Card.Title>
                 <Card.Text>
                   Quedás habilitado para operar con proveedores internacionales y despachantes de aduana.
@@ -55,7 +55,7 @@ const Importador = () => {
             </Col>
             <Col md={6} lg={3}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaWallet className="h1 text-info mx-auto mb-3" />
+                <FaCreditCard className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Acceso a divisas y regímenes</Card.Title>
                 <Card.Text>
                   Posibilidad de pagar al exterior con respaldo oficial y utilizar beneficios impositivos.
@@ -84,7 +84,7 @@ const Importador = () => {
           <Row className="g-4 justify-content-center">
             <Col md={6} lg={4}>
               <Card className="h-100 p-4 border shadow-sm">
-                <FaChartLine className="h1 text-info mx-auto mb-3" />
+                <FaArrowUp className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold text-center">Ampliás tu negocio</Card.Title>
                 <Card.Text>
                   Accedés a productos que no se fabrican en el país o que tienen mejores precios en el exterior.
@@ -93,7 +93,7 @@ const Importador = () => {
             </Col>
             <Col md={6} lg={4}>
               <Card className="h-100 p-4 border shadow-sm">
-                <FaHandshake className="h1 text-info mx-auto mb-3" />
+                <FaUser className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold text-center">Competitividad</Card.Title>
                 <Card.Text>
                   Ofrecés variedad, calidad y costos más bajos frente a tu competencia.

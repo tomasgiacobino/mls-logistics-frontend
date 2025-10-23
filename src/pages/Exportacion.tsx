@@ -1,6 +1,6 @@
 // src/pages/Exportacion.tsx
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaGlobe, FaChartLine, FaCheckCircle, FaWhatsapp, FaShieldAlt } from 'react-icons/fa';
+import { FaGlobe, FaArrowUp, FaCheckCircle, FaWhatsapp, FaShieldAlt } from 'react-icons/fa';
 import fondoExportacion from '../assets/images/camion2.jpg';
 
 const Exportacion = () => {
@@ -57,7 +57,7 @@ const Exportacion = () => {
             </Col>
             <Col md={6} lg={4}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaChartLine className="h1 text-info mx-auto mb-3" />
+                <FaArrowUp className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Diversificás riesgos</Card.Title>
                 <Card.Text>
                   No dependés solo del mercado local y te protegés de la volatilidad.
