@@ -1,8 +1,11 @@
 // src/pages/CotizacionMaritima.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaFile, FaClipboard, FaWhatsapp } from 'react-icons/fa';
-import fondoBarco from '../assets/images/paisaje3.jpg'; // Asegúrate de tener esta imagen
-import WhatsappForm from '../components/WhatsappForm'; // Importa el componente reutilizable
+import fondoBarco from '../assets/images/paisaje3.jpg';
+import WhatsappForm from '../components/WhatsappForm';
+import { TbListDetails } from 'react-icons/tb';
+import { BsStack } from 'react-icons/bs';
+import { LiaPalletSolid } from 'react-icons/lia';
 
 const CotizacionMaritima = () => {
 
@@ -86,7 +89,7 @@ const CotizacionMaritima = () => {
               <Row className="g-4 mt-4">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <FaFile className="h1 text-info mx-auto mb-3" />
+                    <TbListDetails className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Packing List & Invoice Proforma</Card.Title>
                     <Card.Text>El detalle completo de tu carga y el modelo de factura.</Card.Text>
                   </Card>
@@ -110,14 +113,14 @@ const CotizacionMaritima = () => {
               <Row className="g-4 justify-content-center">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <FaFile className="h1 text-info mx-auto mb-3" />
+                    <BsStack className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Carga Apilable</Card.Title>
                     <Card.Text>Si la carga es apilable o no apilable.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <FaClipboard className="h1 text-info mx-auto mb-3" />
+                    <LiaPalletSolid className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Medida del Pallet</Card.Title>
                     <Card.Text>Qué tipo de Pallet utilizan y su medida.</Card.Text>
                   </Card>

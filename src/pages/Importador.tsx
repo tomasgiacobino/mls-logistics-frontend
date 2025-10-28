@@ -1,8 +1,11 @@
 // src/pages/Importador.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaShieldAlt, FaArrowUp, FaGavel, FaUser, FaCreditCard } from 'react-icons/fa';
+import { FaArrowUp, FaUser, FaCreditCard } from 'react-icons/fa';
 import { FaFile, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
-import fondoImportador from '../assets/images/camion3.jpg'; // Asegúrate de tener una imagen de fondo
+import fondoImportador from '../assets/images/camion3.jpg';
+import { TbPackageImport } from 'react-icons/tb';
+import { PiCertificateFill } from 'react-icons/pi';
+import { BsCurrencyExchange } from 'react-icons/bs';
 
 const Importador = () => {
   return (
@@ -37,7 +40,7 @@ const Importador = () => {
           <Row className="g-4">
             <Col md={6} lg={3}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaGavel className="h1 text-info mx-auto mb-3" />
+                <TbPackageImport className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Canal oficial de importación</Card.Title>
                 <Card.Text>
                   Podés traer productos de manera legal y segura.
@@ -55,7 +58,7 @@ const Importador = () => {
             </Col>
             <Col md={6} lg={3}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaCreditCard className="h1 text-info mx-auto mb-3" />
+                <BsCurrencyExchange className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Acceso a divisas y regímenes</Card.Title>
                 <Card.Text>
                   Posibilidad de pagar al exterior con respaldo oficial y utilizar beneficios impositivos.
@@ -64,7 +67,7 @@ const Importador = () => {
             </Col>
             <Col md={6} lg={3}>
               <Card className="h-100 text-center p-4 border shadow-sm">
-                <FaShieldAlt className="h1 text-info mx-auto mb-3" />
+                <PiCertificateFill className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Homologaciones y certificaciones</Card.Title>
                 <Card.Text>
                   Tramitás los permisos necesarios para productos específicos.

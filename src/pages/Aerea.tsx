@@ -4,6 +4,8 @@ import { FaPhone, FaFile, FaClipboard, FaDownload } from 'react-icons/fa';
 import GuiaImportacionAereaPDF from '../assets/pdfs/guiaAerea.pdf';
 import fondoAvion from '../assets/images/avion4.jpg'
 import WhatsappForm from '../components/WhatsappForm';
+import { AiOutlineQrcode } from 'react-icons/ai';
+import { RiBillFill } from 'react-icons/ri';
 
 const CotizacionAerea = () => {
 
@@ -80,7 +82,7 @@ const CotizacionAerea = () => {
               <Row className="g-4 mt-4">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaFile className="h1 text-info mx-auto mb-3" />
+                    <RiBillFill className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">Invoice Proforma</Card.Title>
                     <Card.Text>(Modelo de factura)</Card.Text>
                   </Card>
@@ -94,7 +96,7 @@ const CotizacionAerea = () => {
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaFile className="h1 text-info mx-auto mb-3" />
+                    <AiOutlineQrcode className="h1 text-info mx-auto mb-3" />
                     <Card.Title className="fw-bold">HS Code</Card.Title>
                     <Card.Text>Código de clasificación aduanera.</Card.Text>
                   </Card>

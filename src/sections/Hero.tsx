@@ -13,7 +13,7 @@ const Hero = () => {
             <Col md={6} className="text-center text-md-start mb-4 mb-md-0">
               <h1 className="display-4 fw-bold mb-3 text-info">Manu Muñoz Importaciones</h1>
   
-              <h3 className="mb-3">👋 Bienvenido</h3>
+              <h3 className="mb-3">👋 Bienvenido/a</h3>
               <p className="lead mb-4">
                 Hola, soy Manu Muñoz, especialista en comercio internacional y logística con más de 20 años de experiencia.
               </p>

@@ -6,7 +6,7 @@ const Services = () => {
     <section className="py-5" id="services">
       <Container>
         <h2 className="text-center mb-2 text-primary">Servicios</h2>
-        <h4 className="text-center mb-5 text-secondary">Soluciones integrales para tu negocio internacional</h4>
+        <h4 className="text-center mb-5 text-secondary">Soluciones integrales para tu crecimiento internacional</h4>
         <Row className="g-4 justify-content-center">
           <ServiceCard
             icon="bi-mortarboard"
@@ -18,7 +18,7 @@ const Services = () => {
           <ServiceCard
             icon="bi-airplane-fill"
             title="Cotizá tu importación Aérea"
-            description="Tarifas preferenciales, servicios de Pick up y consolidación de mercadería."
+            description="Tarifas preferenciales, servicios de Pick up puerta a puerta y consolidación de mercadería."
             buttonText="Cotizar"
             to="/importacionAerea"
           />
@@ -31,14 +31,14 @@ const Services = () => {
           />
           <ServiceCard
             icon="bi-clipboard-fill"
-            title="Inscripción como importador 📝"
-            description="Trae la importación a tu nombre y obtené los beneficios impositivos para mejorar tus márgenes."
+            title="Inscripción como importador"
+            description="Registrate como importador y obtené beneficios impositivos para mejorar tu rentabilidad."
             buttonText="Conocer más"
             to="/importador"
           />
           <ServiceCard
             icon="bi-globe-americas"
-            title="Exportá con nosotros 🌍"
+            title="Exportá con nosotros"
             description="Conecta tus productos con el Mercado Global."
             buttonText="Conectar ahora"
             to="/exportacion"
