@@ -9,8 +9,8 @@ const Curso = () => {
 
   const handleBuyClick = async () => {
     try{
-      const response = await axios.post<{ init_point: string }>('https://mls-logistics-backend.onrender.com/create-order');
-      const sandboxUrl = response.data.init_point;
+      const response = await axios.post<{ sandbox_init_point: string }>('https://mls-logistics-backend.onrender.com/create-order');
+      const sandboxUrl = response.data.sandbox_init_point;
         window.location.href = sandboxUrl;
     }catch (error){
       console.error('Error al iniciar el proceso de pago:', error);
