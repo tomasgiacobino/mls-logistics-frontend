@@ -26,7 +26,8 @@ const SuccessPage = () => {
             }
 
             try {
-                const response = await axios.get<PaymentVerificationResponse>(`/api/verify-payment/${paymentId}`, {
+                const response = await axios.get<PaymentVerificationResponse>
+                (`https://mls-logistics-backend.onrender.com/api/verify-payment/${paymentId}`, {
                     headers: {
                         'ngrok-skip-browser-warning': 'true'
                     }
