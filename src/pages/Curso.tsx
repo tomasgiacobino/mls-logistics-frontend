@@ -9,7 +9,7 @@ const Curso = () => {
 
   const handleBuyClick = async () => {
     try{
-      const response = await axios.post<{ sandbox_init_point: string }>('http://localhost:5000/create-order');
+      const response = await axios.post<{ sandbox_init_point: string }>('https://770a2aca0f38.ngrok-free.app/create-order');
       const sandboxUrl = response.data.sandbox_init_point;
         window.location.href = sandboxUrl;
     }catch (error){
