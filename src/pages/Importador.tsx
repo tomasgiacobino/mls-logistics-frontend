@@ -1,6 +1,6 @@
 // src/pages/Importador.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaArrowUp, FaUser, FaCreditCard } from 'react-icons/fa';
+import { FaArrowUp, FaUser } from 'react-icons/fa';
 import { FaFile, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
 import fondoImportador from '../assets/images/camion3.jpg';
 import { TbPackageImport } from 'react-icons/tb';

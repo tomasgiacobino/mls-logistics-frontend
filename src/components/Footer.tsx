@@ -1,6 +1,5 @@
 // src/components/Footer.tsx
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import {FaInstagram } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {

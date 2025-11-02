@@ -1,4 +1,4 @@
-import {Container, Row, Col, Button} from 'react-bootstrap'
+import {Container, Row, Col} from 'react-bootstrap'
  import backgroundImage1 from '../assets/images/fondoHero.jpg'
 // import heroImage1 from '../assets/images/camion4.jpg'
 

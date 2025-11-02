@@ -1,5 +1,5 @@
 // src/components/Contact.tsx
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Container, Row, Col, Form, Button, InputGroup } from 'react-bootstrap';
 import { FaWhatsapp, FaEnvelope, FaCopy } from 'react-icons/fa';
 
