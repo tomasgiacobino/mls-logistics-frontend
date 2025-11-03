@@ -7,7 +7,7 @@ import ups from '../assets/images/ups2.png';
 
 const Partners = () => {
   return (
-    <section className="bg-light py-5" style={{maxHeight: '290px'}}>
+    <section className="bg-light py-5" style={{maxHeight: '490px'}}>
       <Container>
         <h2 className="text-center mb-1 text-primary">Partners Estratégicos</h2>
         <Row className="d-flex flew-nowrap justify-content-center align-items-center gap-3">
