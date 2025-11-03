@@ -10,7 +10,7 @@ const Partners = () => {
     <section className="bg-light py-5" style={{maxHeight: '290px'}}>
       <Container>
         <h2 className="text-center mb-1 text-primary">Partners Estratégicos</h2>
-        <Row className="d-flex flex-nowrap justify-content-center align-items-center" style={{ gap: '30px' }}>
+        <Row className="d-flex justify-content-center align-items-center" style={{ gap: '30px' }}>
           
           <Col xs={4} md={4} lg={2} className="text-center mb-4">
             <img src={dhlLogo} alt="DHL Logo" className="img-fluid" style={{ maxHeight: '200px' }} />
