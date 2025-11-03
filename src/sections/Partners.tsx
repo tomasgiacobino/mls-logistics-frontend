@@ -7,10 +7,10 @@ import ups from '../assets/images/ups2.png';
 
 const Partners = () => {
   return (
-    <section className="bg-light py-5" style={{maxHeight: '490px'}}>
+    <section className="bg-light py-5 partnersSection">
       <Container>
         <h2 className="text-center mb-1 text-primary">Partners Estratégicos</h2>
-        <Row className="d-flex flew-nowrap justify-content-center align-items-center gap-3">
+        <Row className="d-flex flew-nowrap justify-content-center align-items-center" style={{ gap: '30px' }}>
           
           <Col xs={4} md={4} lg={2} className="text-center mb-4">
             <img src={dhlLogo} alt="DHL Logo" className="img-fluid" style={{ maxHeight: '200px' }} />

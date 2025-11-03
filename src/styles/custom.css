@@ -197,3 +197,18 @@
 
 
 /* SECCION Exportacion */
+
+
+/* Seccion Partners  */
+/* Partners.module.css */
+.partnersSection {
+  max-height: 490px; /* Para móviles */
+}
+
+/* Para tablets y desktop (md y arriba) */
+@media (min-width: 768px) {
+  .partnersSection {
+    max-height: 290px;
+  }
+}
+/* Seccion Partners  */
