@@ -83,9 +83,9 @@ const Curso = () => {
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="py-3">
         <Container>
-          <Row className="mb-5">
+          <Row className="mb-2">
             <Col>
               <h3 className="text-center text-primary fw-bold mb-5">💡 ¿Qué vas a poder hacer?</h3>
               <Row className="justify-content-center">

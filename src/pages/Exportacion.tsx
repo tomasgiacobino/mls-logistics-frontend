@@ -28,10 +28,11 @@ const Exportacion = () => {
                   🌍 <span className="text-info">Exportá</span> con nosotros
                 </h1>
                 <p className="lead mt-3 fs-5">
-                  El mercado internacional está lleno de oportunidades y tu producto puede ser parte de él. Vender al mundo no solo significa aumentar tus ingresos, sino también hacer crecer tu marca de manera exponencial.
+                  El mercado internacional está lleno de oportunidades y <span className='fw-bold'>tu producto puede ser parte de él.</span> Vender al mundo no solo significa aumentar tus ingresos, sino también hacer crecer tu marca de manera exponencial y posicionarla en nuevos mercados.
                 </p>
                 <p className="lead mt-3 fs-5">
-                  En MM Importaciones te acompañamos a transformar tu emprendimiento o empresa en un jugador global, conectándote con clientes de distintos países y guiándote en cada paso del proceso exportador.
+                  En MM Importaciones te acompañamos a transformar tu emprendimiento o empresa en un <span className='fw-bold'>jugador global</span>,
+                   conectándote con clientes de distintos países y guiándote en cada paso del proceso exportador.
                 </p>
               </Col>
             </Row>
@@ -60,7 +61,7 @@ const Exportacion = () => {
                 <FaArrowUp className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Diversificás riesgos</Card.Title>
                 <Card.Text>
-                  No dependés solo del mercado local y te protegés de la volatilidad.
+                  No dependés solo del mercado local.
                 </Card.Text>
               </Card>
             </Col>
@@ -73,6 +74,15 @@ const Exportacion = () => {
                 </Card.Text>
               </Card>
             </Col>
+            <Col md={6} lg={4}>
+              <Card className="h-100 text-center p-4 border shadow-sm">
+                <FaShieldAlt className="h1 text-info mx-auto mb-3" />
+                <Card.Title className="fw-bold">Construís marca internacional</Card.Title>
+                <Card.Text>
+                  Tu empresa gana prestigio y valor.
+                </Card.Text>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -82,11 +92,11 @@ const Exportacion = () => {
         <Container>
           <Row className="justify-content-center text-center">
             <Col lg={10}>
-              <p className="lead fw-bold mt-3">
-                Con nuestra experiencia en comercio exterior, vas a poder conquistar mercados internacionales de forma segura, legal y estratégica.
+              <p className="lead mt-3">
+                Con nuestra experiencia en comercio exterior, vas a poder <span className='fw-bold'>conquistar mercados internacionales</span>  de forma segura, legal y estratégica.
               </p>
-              <h3 className="fw-bold text-info mt-4">
-                👉 Animate a dar el salto: el mundo está listo para tus productos.
+              <h3 className="text-info mt-4">
+                👉 Animate a dar el salto: <span className='fw-bold'>el mundo está listo para tus productos.</span>
               </h3>
               <div className="mt-4">
                 <Button

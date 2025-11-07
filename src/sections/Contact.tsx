@@ -6,7 +6,7 @@ import { FaWhatsapp, FaEnvelope, FaCopy } from 'react-icons/fa';
 const Contact = () => {
   const [showCopyMessage, setShowCopyMessage] = useState(false);
   const whatsappMessage = encodeURIComponent('Hola, me contacto para pedirte más información sobre MLS International Logistics');
-  const whatsappNumber = 'tunumerodewhatsapp';
+  const whatsappNumber = '+543492419489';
   const emailAddress = 'tumail@ejemplo.com';
 
   const handleWhatsappClick = () => {

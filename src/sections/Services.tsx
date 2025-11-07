@@ -25,14 +25,14 @@ const Services = () => {
           <ServiceCard
             icon="bi-water"
             title="Cotizá tu importación Marítima"
-            description="Contenedores Completos (FCL), Contenedores Compartidos (LCL)"
+            description="Contenedores Completos (FCL), Contenedores Compartidos (LCL)."
             buttonText="Cotizar"
             to="/importacionMaritima"
           />
           <ServiceCard
             icon="bi-clipboard-fill"
             title="Inscripción como importador"
-            description="Registrate como importador y obtené beneficios impositivos para mejorar tu rentabilidad."
+            description="Registrate como importador y obenté los beneficios impositivos para mejorar tus rentabilidad."
             buttonText="Conocer más"
             to="/importador"
           />

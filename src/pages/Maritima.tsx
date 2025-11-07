@@ -1,6 +1,6 @@
 // src/pages/CotizacionMaritima.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaFile, FaClipboard, FaWhatsapp } from 'react-icons/fa';
+import { FaFile, FaClipboard, FaShip } from 'react-icons/fa';
 import fondoBarco from '../assets/images/paisaje3.jpg';
 import WhatsappForm from '../components/WhatsappForm';
 import { TbListDetails } from 'react-icons/tb';
@@ -59,7 +59,7 @@ const CotizacionMaritima = () => {
                 <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
                   <FaFile className="h1" />
                   <FaClipboard className="h1" />
-                  <FaWhatsapp className="h1" />
+                  <FaShip className="h1" />
                 </div>
               </Col>
               <Col lg={4} className="mt-4 mt-lg-0 text-center">

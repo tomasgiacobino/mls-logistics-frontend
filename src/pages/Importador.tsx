@@ -1,6 +1,6 @@
 // src/pages/Importador.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaArrowUp, FaUser } from 'react-icons/fa';
+import { FaArrowUp, FaUser, FaFileContract } from 'react-icons/fa';
 import { FaFile, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
 import fondoImportador from '../assets/images/camion3.jpg';
 import { TbPackageImport } from 'react-icons/tb';
@@ -61,7 +61,7 @@ const Importador = () => {
                 <BsCurrencyExchange className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Acceso a divisas y regímenes</Card.Title>
                 <Card.Text>
-                  Posibilidad de pagar al exterior con respaldo oficial y utilizar beneficios impositivos.
+                  Posibilidad de pagar al exterior con respaldo oficial y utilizar beneficios impositivos disponibles.
                 </Card.Text>
               </Card>
             </Col>
@@ -70,7 +70,7 @@ const Importador = () => {
                 <PiCertificateFill className="h1 text-info mx-auto mb-3" />
                 <Card.Title className="fw-bold">Homologaciones y certificaciones</Card.Title>
                 <Card.Text>
-                  Tramitás los permisos necesarios para productos específicos.
+                  Tramitás los permisos necesarios para productos específicos (electrónicos, textiles, alimentos, etc.).
                 </Card.Text>
               </Card>
             </Col>
@@ -112,6 +112,15 @@ const Importador = () => {
                 </Card.Text>
               </Card>
             </Col>
+            <Col md={6} lg={4}>
+              <Card className="h-100 p-4 border shadow-sm">
+                <FaFileContract className="h1 text-info mx-auto mb-3" />
+                <Card.Title className="fw-bold text-center">Legalidad y Respaldo</Card.Title>
+                <Card.Text>
+                Operás dentro del marco normativo, evitando sanciones y problemas aduaneros.
+                </Card.Text>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -122,22 +131,18 @@ const Importador = () => {
           <Row className="justify-content-center text-center">
             <Col lg={10}>
               <h2 className="fw-bold mb-4">Beneficios fiscales e impositivos <span className="h1">💰</span></h2>
-              <p className="lead mb-4">
+              <p className="lead fw-bold mb-4">
                 Al realizar una importación, gran parte de los impuestos que abonás (IVA, Ganancias, Ingresos Brutos, entre otros) no se pierden:
               </p>
-              <p className="fs-5">
-                Se generan **créditos fiscales** que podés aplicar después al momento de pagar tus impuestos nacionales y provinciales.
-              </p>
-              <p className="fs-5">
-                Esto significa que muchos de los tributos de la importación quedan como saldo a favor para compensar futuras obligaciones fiscales.
-              </p>
-              <p className="lead fw-bold mt-4">
-                En la práctica, terminás transformando un gasto en una herramienta financiera que mejora la rentabilidad de tu negocio.
-              </p>
+              <ul className="fs-5 text-start mx-auto">
+                <li>Se generan <span className='fw-bold'>créditos fiscales</span> que podés aplicar después al momento de pagar tus impuestos nacionales y provinciales.</li>
+                <li>Esto significa que muchos de los tributos de la importación <span className='fw-bold'>quedan como saldo a favor</span> para compensar futuras obligaciones fiscales.</li>
+                <li>En la práctica, terminás transformando un gasto en una <span className='fw-bold'>herramienta financiera</span> que mejora la rentabilidad de tu negocio.</li>
+              </ul>
             </Col>
           </Row>
         </Container>
-      </section>
+      </section>  
 
       {/* Sección de Resumen y Conclusión */}
       <section className="py-5 text-dark">

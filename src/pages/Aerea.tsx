@@ -1,6 +1,6 @@
 // src/pages/CotizacionAerea.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaPhone, FaFile, FaClipboard, FaDownload } from 'react-icons/fa';
+import { FaPlane, FaFile, FaClipboard, FaDownload } from 'react-icons/fa';
 import GuiaImportacionAereaPDF from '../assets/pdfs/guiaAerea.pdf';
 import fondoAvion from '../assets/images/avion4.jpg'
 import WhatsappForm from '../components/WhatsappForm';
@@ -46,12 +46,12 @@ const CotizacionAerea = () => {
                         Cotizá tu <span className='text-info'>importación Aérea</span> ✈️
                     </h1>
                     <p className="lead mt-3">
-                        Contamos con depósito en China y Estados Unidos y somos partners oficiales de DHL, FedEx y Ups. ¡Obtené tu cotización en menos de 24 horas!
+                    Cotiza tu envío aéreo con nosotros, contamos con depósito en China, EE. UU. y somos partners oficiales de DHL y FedEx. ¡Obtené tu cotización en menos de 24 horas!
                     </p>
                     <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
                         <FaFile className="h1" />
                         <FaClipboard className="h1" />
-                        <FaPhone className="h1" />
+                        <FaPlane className="h1" />
                     </div>
                     </Col>
                     <Col lg={4} className="mt-4 mt-lg-0 text-center">
@@ -68,7 +68,7 @@ const CotizacionAerea = () => {
         </div>
     </section>
 
-      {/* Sección 2: Proceso para obtener la cotización */}
+    {/* Sección 2: Proceso para obtener la cotización */}
       <section className="py-5 bg-light text-dark">
         <Container>
           <Row className="justify-content-center">
@@ -106,25 +106,9 @@ const CotizacionAerea = () => {
           </Row>
         </Container>
       </section>
-      <section>
-        <div className="py-5 bg-light text-dark">
-          <Container>
-            <h2 className="text-center fw-bold mb-4">
-              Completa y cotiza
-            </h2>
-          </Container>
-          <WhatsappForm
-            title="Generá tu mensaje para WhatsApp"
-            description="Completa los siguientes datos para armar el mensaje de forma automática y enviarlo a nuestro equipo."
-            fields={aereoFields}
-            whatsappNumber="543492419489"
-            messageTemplate={aereoMessage}
-          />
-        </div>
-      </section>
 
-      {/* Sección 3: Mini Guía Gratuita */}
-      <section className="py-5 bg-white">
+    {/* Sección: Mini Guía Gratuita */}
+      <section className="py-5 bg-light">
         <Container>
           <Row className="justify-content-center">
             <Col lg={8} className="text-center">
@@ -148,7 +132,27 @@ const CotizacionAerea = () => {
           </Row>
         </Container>
       </section>
+
+    {/* Sección: Whatsapp */}
+      <section>
+        <div className="py-5 bg-white text-dark">
+          <Container>
+            <h2 className="text-center fw-bold mb-4">
+              Completa y cotiza
+            </h2>
+          </Container>
+          <WhatsappForm
+            title="Generá tu mensaje para WhatsApp"
+            description="Completa los siguientes datos para armar el mensaje de forma automática y enviarlo a nuestro equipo."
+            fields={aereoFields}
+            whatsappNumber="543492419489"
+            messageTemplate={aereoMessage}
+          />
+        </div>
+      </section>
+
     </>
+
   );
 };
 

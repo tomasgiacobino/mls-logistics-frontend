@@ -26,6 +26,10 @@ const Hero = () => {
                 <li>✅ Marketing digital & e-commerce</li>
                 <li>✅ Asesoramiento a pymes, retailers y emprendedores</li>
               </ul>
+
+              <p className="fst-italic fw-medium text-light mb-4" style={{ fontSize: '1.1rem' }}>
+                Hoy acompaño a empresas y emprendedores a aprovechar las mejores oportunidades del mercado global y crecer sin fronteras.
+              </p>
   
               {/* Espacio para la foto de Manu */}
               {/* Si tienes la imagen, puedes agregarla aquí */}
