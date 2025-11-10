@@ -33,12 +33,12 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' sticky='top'>
         <Container>
         <Navbar.Brand onClick={handleLogoClick} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
-          <img
+          {/* <img
             src={logo}
             alt="Logo MLS International Logistics"
             height="40"
             className="me-2"
-          />
+          /> */}
           <span className='text-primary fw-bold'>MLS&nbsp;</span>
           <span className='text-light'>COMERCIO INTERNACIONAL</span>
         </Navbar.Brand>
