@@ -13,7 +13,7 @@ const CourseLearningCard = ({ icon: Icon, title, description }: CourseLearningCa
       <Card className="h-100 shadow-sm border-0">
         <Card.Body className="text-center">
         <div className='course-card-content'>
-            <Icon className="h1 text-info mb-3" />
+            <Icon className="h1 text-primary mb-3" />
             <Card.Title className="fw-bold">{title}</Card.Title>
         </div>
           <Card.Text>{description}</Card.Text>

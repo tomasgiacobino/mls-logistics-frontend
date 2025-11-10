@@ -9,7 +9,7 @@ interface BenefitItemProps {
 const BenefitItem = ({ icon: Icon, description }: BenefitItemProps) => {
   return (
     <Col md={6} className="text-center mb-4">
-      <Icon className="h2 text-info mb-3" />
+      <Icon className="h2 text-primary mb-3" />
       <p className="lead fw-bold">{description}</p>
     </Col>
   );

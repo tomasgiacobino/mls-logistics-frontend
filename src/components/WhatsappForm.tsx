@@ -46,7 +46,7 @@ const WhatsappForm: React.FC<WhatsappFormProps> = ({
           <Col lg={8}>
             <Card className="p-4 border shadow-sm">
               <Card.Body>
-                <Card.Title className="text-center fw-bold mb-3 h3 text-info">
+                <Card.Title className="text-center fw-bold mb-3 h3 text-primary">
                   {title}
                 </Card.Title>
                 <Card.Text className="text-center lead">

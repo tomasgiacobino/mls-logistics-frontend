@@ -32,7 +32,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' sticky='top'>
         <Container>
           <Navbar.Brand onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
-            <span className='text-info fw-bold'>MLS</span>{' '}
+            <span className='text-primary fw-bold'>MLS</span>{' '}
             <span className='text-light'>INTERNATIONAL LOGISTICS</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

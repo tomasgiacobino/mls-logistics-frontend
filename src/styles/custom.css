@@ -1,10 +1,20 @@
 :root {
-    --bs-primary: #0A2342; /* Azul marino */
-    --bs-secondary: #E9F1F7; /* Gris claro */
-    --bs-info: #0077B6; /* Azul cian (para acentos) */
-    --bs-dark: #2C3E50; /* Gris oscuro */
-    --bs-light: #F8F9FA; /* Blanco */
-  }
+  --bs-primary: #1e72b8;   /* Azul protagonista (confianza, profesionalismo) */
+  --bs-secondary: #ffffff; /* Blanco */
+  --bs-dark: #222222;      /* Negro/gris oscuro */
+  --bs-light: #ffffff;     /* Blanco */
+  --bs-info: #1e72b8;      /* Acentos = mismo azul principal (coherencia) */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 600;
+}
+
+body, p, li, span, input, button {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
 
   /* Transición suave para los componentes de la página */
 .page-transition-enter {

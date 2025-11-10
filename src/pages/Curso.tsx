@@ -26,14 +26,49 @@ const Curso = () => {
             <Col lg={6}>
               <h1 className="text-primary fw-bold">Aprende a importar con nosotros!</h1>
               <h2 className="text-secondary mb-3">Tu puerta de entrada al Comercio Internacional</h2>
-              <p className="lead">
+              <p className="lead fs-4">
                 ¿Querés dar el salto y aprender a importar de manera clara, práctica y sin vueltas? Nuestra Guía de Importaciones es el recurso ideal para quienes buscan empezar a traer productos desde el exterior, evitando errores comunes y entendiendo cada paso del proceso.
               </p>
             </Col>
             <Col lg={6} className="mt-4 mt-lg-0">
-              <div className="ratio ratio-16x9 shadow-lg">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video de presentación" allowFullScreen></iframe>
+            <div className="d-flex justify-content-center align-items-center mt-4">
+            <a 
+              href="https://www.youtube.com/shorts/WxQDqdYdO3A" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-decoration-none"
+              style={{
+                display: 'block',
+                width: '100%',
+                maxWidth: '360px',
+                background: 'white',
+                borderRadius: '12px',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+                overflow: 'hidden',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.03)';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img 
+                src="https://img.youtube.com/vi/WxQDqdYdO3A/mqdefault.jpg"
+                alt="Ver video en YouTube"
+                className="w-100"
+                style={{ borderRadius: '12px 12px 0 0', objectFit: 'cover' }}
+              />
+              <div className="p-3 text-center">
+                <p className="mb-0 text-primary fw-bold fs-5" style={{ fontSize: '0.9rem' }}>
+                  🎥 Ver video en YouTube
+                </p>
               </div>
+            </a>
+          </div>
             </Col>
           </Row>
         </Container>
@@ -119,14 +154,14 @@ const Curso = () => {
               
               <ListGroup as="ul" className="mb-4">
                 <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0 mb-3">
-                  <FaPlay className="fs-4 text-info me-3" />
+                  <FaPlay className="fs-4 text-primary me-3" />
                   <div>
                     <h5 className="fw-bold">Videos explicativos</h5>
                     <p>Incluye videos que acompañan la guía para que lo entiendas de forma visual y práctica.</p>
                   </div>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0">
-                  <FaComments className="fs-1 text-info me-3" />
+                  <FaComments className="fs-1 text-primary me-3" />
                   <div>
                     <h5 className="fw-bold">Asesoramiento personalizado</h5>
                     <p>Tendrás un asesoramiento mano a mano con Manu Muñoz, una sesión exclusiva de 1 hora por Google Meet donde vas a poder resolver todas tus dudas y recibir consejos personalizados según tu proyecto.</p>
@@ -139,7 +174,7 @@ const Curso = () => {
                 <h4 className="fw-bold mb-3">Empieza hoy tu camino en el comercio internacional</h4>
                 <p>Hacé crecer tu negocio con conocimiento real, práctico y aplicado.</p>
                 <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  <Button variant="info" className="fw-bold" onClick={handleBuyClick}>
+                  <Button variant="primary" className="fw-bold" onClick={handleBuyClick}>
                     <FaShoppingCart className="me-2" />
                     Comprar Asesoramiento
                   </Button>

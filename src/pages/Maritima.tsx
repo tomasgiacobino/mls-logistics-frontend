@@ -51,15 +51,15 @@ const CotizacionMaritima = () => {
             <Row className="align-items-center">
               <Col lg={8} className="text-center text-lg-start">
                 <h1 className="fw-bold">
-                  Cotizá tu <span className="text-info">importación Marítima</span> 🚢
+                  Cotizá tu <span className="text-primary">importación Marítima</span> 🚢
                 </h1>
                 <p className="lead mt-3 fs-5">
                   ¿Querés importar vía marítima? Es ideal para productos de gran peso y dimensiones.
                 </p>
                 <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
-                  <FaFile className="h1" />
-                  <FaClipboard className="h1" />
-                  <FaShip className="h1" />
+                  <FaFile className="h1 text-primary" />
+                  <FaClipboard className="h1 text-primary" />
+                  <FaShip className="h1 text-primary" />
                 </div>
               </Col>
               <Col lg={4} className="mt-4 mt-lg-0 text-center">
@@ -89,21 +89,21 @@ const CotizacionMaritima = () => {
               <Row className="g-4 mt-4">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <TbListDetails className="h1 text-info mx-auto mb-3" />
+                    <TbListDetails className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Packing List & Invoice Proforma</Card.Title>
                     <Card.Text>El detalle completo de tu carga y el modelo de factura.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <FaClipboard className="h1 text-info mx-auto mb-3" />
+                    <FaClipboard className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">HS Code & Incoterm</Card.Title>
                     <Card.Text>Clasificación aduanera del producto y el incoterm (Ideal FOB).</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <FaFile className="h1 text-info mx-auto mb-3" />
+                    <FaFile className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Origen / Destino & Tipo de mercadería</Card.Title>
                     <Card.Text>Información sobre la carga y su tipo.</Card.Text>
                   </Card>
@@ -113,14 +113,14 @@ const CotizacionMaritima = () => {
               <Row className="g-4 justify-content-center">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <BsStack className="h1 text-info mx-auto mb-3" />
+                    <BsStack className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Carga Apilable</Card.Title>
                     <Card.Text>Si la carga es apilable o no apilable.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center border shadow-sm">
-                    <LiaPalletSolid className="h1 text-info mx-auto mb-3" />
+                    <LiaPalletSolid className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Medida del Pallet</Card.Title>
                     <Card.Text>Qué tipo de Pallet utilizan y su medida.</Card.Text>
                   </Card>

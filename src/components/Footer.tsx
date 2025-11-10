@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Columna 1: Logo y descripción */}
         <Col md={6} className="mb-4">
           <h5>
-            <span className="text-info fw-bold">MLS</span>{' '}
+            <span className="text-primary fw-bold">MLS</span>{' '}
             <span className="text-light">INTERNATIONAL LOGISTICS</span>
           </h5>
           <p className="text-white">

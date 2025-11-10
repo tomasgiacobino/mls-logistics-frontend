@@ -15,13 +15,13 @@ const ServiceCard = ({title, description, icon, buttonText, to} : ServiceCardPro
         <Card className="h-100 p-3 shadow-sm border-0 card-hover">
           <Card.Body className="d-flex flex-column text-center">
             <div className="my-3">
-                <i className={`bi ${icon} h1 text-info`}></i>
+                <i className={`bi ${icon} h1 text-primary`}></i>
             </div>
             <Card.Title className="fw-bold mb-3">{title}</Card.Title>
             <Card.Text className=''>{description}</Card.Text>
             <div className="mt-auto">
                 <Link to={to}>
-                    <Button variant="info" className="fw-bold">
+                    <Button variant="primary" className="fw-bold">
                         {buttonText}
                     </Button>
                 </Link>

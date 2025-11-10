@@ -43,7 +43,7 @@ const CotizacionAerea = () => {
                 <Row className="align-items-center">
                     <Col lg={8} className="text-center text-lg-start">
                     <h1 className="fw-bold">
-                        Cotizá tu <span className='text-info'>importación Aérea</span> ✈️
+                        Cotizá tu <span className='text-primary'>importación Aérea</span> ✈️
                     </h1>
                     <p className="lead mt-3">
                     Cotiza tu envío aéreo con nosotros, contamos con depósito en China, EE. UU. y somos partners oficiales de DHL y FedEx. ¡Obtené tu cotización en menos de 24 horas!
@@ -82,21 +82,21 @@ const CotizacionAerea = () => {
               <Row className="g-4 mt-4">
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <RiBillFill className="h1 text-info mx-auto mb-3" />
+                    <RiBillFill className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Invoice Proforma</Card.Title>
                     <Card.Text>(Modelo de factura)</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <FaClipboard className="h1 text-info mx-auto mb-3" />
+                    <FaClipboard className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">Packing List</Card.Title>
                     <Card.Text>El detalle completo de tu carga.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={4}>
                   <Card className="h-100 p-4 text-center">
-                    <AiOutlineQrcode className="h1 text-info mx-auto mb-3" />
+                    <AiOutlineQrcode className="h1 text-primary mx-auto mb-3" />
                     <Card.Title className="fw-bold">HS Code</Card.Title>
                     <Card.Text>Código de clasificación aduanera.</Card.Text>
                   </Card>
@@ -113,7 +113,7 @@ const CotizacionAerea = () => {
           <Row className="justify-content-center">
             <Col lg={8} className="text-center">
               <h4 className="fw-bold mb-4">
-                A continuación te adjuntamos una <span className='text-info'> MINI GUÍA GRATUITA </span>
+                A continuación te adjuntamos una <span className='text-primary'> MINI GUÍA GRATUITA </span>
               </h4>
               <p className="lead">
                 Para que entiendas el paso a paso del proceso de importación aérea y estés preparado.

@@ -5,13 +5,13 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 const Hero = () => {
     return (
-      <section className="hero-section bg-dark text-light py-5" id="home"
+      <section className="hero-section bg-dark text-white py-5" id="home"
       style={{backgroundImage: `url(${backgroundImage1})`}}>
         <div className='hero-content'>
         <Container>
           <Row className="align-items-center">
             <Col md={6} className="text-center text-md-start mb-4 mb-md-0">
-              <h1 className="display-4 fw-bold mb-3 text-info">Manu Muñoz Importaciones</h1>
+              <h1 className="display-4 fw-bold mb-3 text-primary">Manu Muñoz Importaciones</h1>
   
               <h3 className="mb-3">👋 Bienvenido/a</h3>
               <p className="lead mb-4">
@@ -27,22 +27,52 @@ const Hero = () => {
                 <li>✅ Asesoramiento a pymes, retailers y emprendedores</li>
               </ul>
 
-              <p className="fst-italic fw-medium text-light mb-4" style={{ fontSize: '1.1rem' }}>
+              <p className="fst-italic fw-medium text-white mb-4" style={{ fontSize: '1.2rem' }}>
                 Hoy acompaño a empresas y emprendedores a aprovechar las mejores oportunidades del mercado global y crecer sin fronteras.
               </p>
   
-              {/* Espacio para la foto de Manu */}
-              {/* Si tienes la imagen, puedes agregarla aquí */}
-              {/* <img src={manuImage} alt="Manu Muñoz" className="img-fluid rounded-circle mt-4" style={{ maxWidth: '200px' }} /> */}
   
             </Col>
   
             <Col md={6}>
-              <div className="ratio ratio-16x9 bg-secondary rounded" style={{ minHeight: '300px' }}>
-                <p className="text-center text-light d-flex align-items-center justify-content-center">
-                  Espacio para video de presentación
+            <div className="d-flex justify-content-center align-items-center mt-4">
+            <a 
+              href="https://www.youtube.com/shorts/OEZ0GegIo-M" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-decoration-none"
+              style={{
+                display: 'block',
+                width: '100%',
+                maxWidth: '360px',
+                background: 'white',
+                borderRadius: '12px',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+                overflow: 'hidden',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'scale(1.03)';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
+              }}
+            >
+              <img 
+                src="https://img.youtube.com/vi/OEZ0GegIo-M/mqdefault.jpg" 
+                alt="Ver video en YouTube"
+                className="w-100"
+                style={{ borderRadius: '12px 12px 0 0', objectFit: 'cover' }}
+              />
+              <div className="p-3 text-center">
+                <p className="mb-0 text-primary fw-bold fs-5" style={{ fontSize: '0.9rem' }}>
+                  🎥 Ver video en YouTube
                 </p>
               </div>
+            </a>
+          </div>
             </Col>
           </Row>
         </Container>

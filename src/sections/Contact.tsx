@@ -7,7 +7,7 @@ const Contact = () => {
   const [showCopyMessage, setShowCopyMessage] = useState(false);
   const whatsappMessage = encodeURIComponent('Hola, me contacto para pedirte más información sobre MLS International Logistics');
   const whatsappNumber = '+543492419489';
-  const emailAddress = 'tumail@ejemplo.com';
+  const emailAddress = 'info@mmimportaciones.net';
 
   const handleWhatsappClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
@@ -71,6 +71,7 @@ const Contact = () => {
                       value={emailAddress}
                       readOnly
                       className="bg-white text-dark border-primary"
+                      style={{ fontSize: '1rem'}}
                     />
                     <Button variant="outline-primary" onClick={copyEmailToClipboard}>
                       <FaCopy />

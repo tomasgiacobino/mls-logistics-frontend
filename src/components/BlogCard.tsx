@@ -15,7 +15,7 @@ const BlogCard = ({image, title, excerpt}: BlogCardProps) => {
             <Card.Body>
                 <Card.Title className="fw-bold">{title}</Card.Title>
                 <Card.Text>{excerpt}</Card.Text>
-                <Button variant="info" href="#" className="mt-auto">Leer más</Button>
+                <Button variant="primary" href="#" className="mt-auto">Leer más</Button>
             </Card.Body>
             </Card>
         </Col>
