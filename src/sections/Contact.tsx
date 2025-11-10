@@ -71,7 +71,7 @@ const Contact = () => {
                       value={emailAddress}
                       readOnly
                       className="bg-white text-dark border-primary"
-                      style={{ fontSize: '1rem'}}
+                      style={{ fontSize: '0.98rem'}}
                     />
                     <Button variant="outline-primary" onClick={copyEmailToClipboard}>
                       <FaCopy />

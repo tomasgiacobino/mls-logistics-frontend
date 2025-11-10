@@ -44,7 +44,7 @@ const Hero = () => {
               style={{
                 display: 'block',
                 width: '100%',
-                maxWidth: '360px',
+                maxWidth: '500px',
                 background: 'white',
                 borderRadius: '12px',
                 boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
