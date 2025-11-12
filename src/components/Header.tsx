@@ -36,7 +36,11 @@ const Header = () => {
           {/* Contenedor principal: flex row en desktop/tablet, column en móvil */}
           <div className="d-flex align-items-center justify-content-between w-100">
             {/* Logo + Texto: encerrados en un div para controlar su comportamiento */}
-            <div className="header-logo-text d-flex align-items-center">
+            <div
+              onClick={handleLogoClick}
+              style={{ cursor: 'pointer' }}
+              className="header-logo-text d-flex align-items-center"
+            >
               {/* Logo */}
               <img
                 src={logo}
