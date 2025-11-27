@@ -4,6 +4,7 @@ import axios from 'axios';
 import CourseLearningCard from '../components/CourseLearningCard';
 import BenefitItem from '../components/BenefitItem';
 import guiaCurso from '../assets/pdfs/guiaCurso.pdf';
+import fondo from '../assets/images/Fondos/f1.jpg';
 
 const Curso = () => {
 
@@ -20,13 +21,15 @@ const Curso = () => {
 
   return (
     <>
-      <section className="py-5">
+      <section className="py-5 curso-section"
+      style={{backgroundImage: `url(${fondo})`}}>
+        <div className='curso-content'>
         <Container>
           <Row className="align-items-center mb-5">
             <Col lg={6}>
               <h1 className="text-primary fw-bold">Aprende a importar con nosotros!</h1>
               <h2 className="text-secondary mb-3">Tu puerta de entrada al Comercio Internacional</h2>
-              <p className="lead fs-4">
+              <p className="lead fs-4 text-white">
                 ¿Querés dar el salto y aprender a importar de manera clara, práctica y sin vueltas? Nuestra Guía de Importaciones es el recurso ideal para quienes buscan empezar a traer productos desde el exterior, evitando errores comunes y entendiendo cada paso del proceso.
               </p>
             </Col>
@@ -69,6 +72,53 @@ const Curso = () => {
               </div>
             </a>
           </div>
+            </Col>
+          </Row>
+        </Container>
+        </div>
+      </section>
+
+      <section className="py-5 bg-white">
+        <Container>
+          <Row className="align-items-center mb-5">
+          <h3 className="text-primary fw-bold mb-5 text-center">🎥 Más que una guía: videos + asesoramiento personalizado</h3>
+            <Col lg={6}>
+              
+              <ListGroup as="ul" className="mb-4">
+                <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-white p-0 mb-3">
+                  <FaPlay className="fs-4 text-primary me-3" />
+                  <div>
+                    <h5 className="fw-bold">Videos explicativos</h5>
+                    <p>Incluye videos que acompañan la guía para que lo entiendas de forma visual y práctica.</p>
+                  </div>
+                </ListGroup.Item>
+                <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-white p-0">
+                  <FaComments className="fs-1 text-primary me-3" />
+                  <div>
+                    <h5 className="fw-bold">Asesoramiento personalizado</h5>
+                    <p>Tendrás un asesoramiento mano a mano con Manu Muñoz, una sesión exclusiva de 1 hora por Google Meet donde vas a poder resolver todas tus dudas y recibir consejos personalizados según tu proyecto.</p>
+                  </div>
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
+            <Col lg={6} className="ps-lg-5 mt-4 mt-lg-0">
+              <Card className="p-4 text-center shadow">
+                <h4 className="fw-bold mb-3">Empieza hoy tu camino en el comercio internacional</h4>
+                <p>Hacé crecer tu negocio con conocimiento real, práctico y aplicado.</p>
+                <div className="d-flex flex-wrap gap-2 justify-content-center">
+                  <Button variant="primary" className="fw-bold" onClick={handleBuyClick}>
+                    <FaShoppingCart className="me-2" />
+                    Comprar Asesoramiento
+                  </Button>
+                    <a
+                    href={guiaCurso}
+                    download='Guia_Curso_Importaciones.pdf'
+                    className='btn btn-outline-primary fw-bold'>
+                      <FaDownload className="me-2" />
+                      Temario Guía
+                    </a>
+                </div>
+              </Card>
             </Col>
           </Row>
         </Container>
@@ -146,51 +196,6 @@ const Curso = () => {
         </Container>
       </section>
 
-      <section className="py-5 bg-light">
-        <Container>
-          <Row className="align-items-center mb-5">
-          <h3 className="text-primary fw-bold mb-5 text-center">🎥 Más que una guía: videos + asesoramiento personalizado</h3>
-            <Col lg={6}>
-              
-              <ListGroup as="ul" className="mb-4">
-                <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0 mb-3">
-                  <FaPlay className="fs-4 text-primary me-3" />
-                  <div>
-                    <h5 className="fw-bold">Videos explicativos</h5>
-                    <p>Incluye videos que acompañan la guía para que lo entiendas de forma visual y práctica.</p>
-                  </div>
-                </ListGroup.Item>
-                <ListGroup.Item as="li" className="d-flex align-items-start border-0 bg-light p-0">
-                  <FaComments className="fs-1 text-primary me-3" />
-                  <div>
-                    <h5 className="fw-bold">Asesoramiento personalizado</h5>
-                    <p>Tendrás un asesoramiento mano a mano con Manu Muñoz, una sesión exclusiva de 1 hora por Google Meet donde vas a poder resolver todas tus dudas y recibir consejos personalizados según tu proyecto.</p>
-                  </div>
-                </ListGroup.Item>
-              </ListGroup>
-            </Col>
-            <Col lg={6} className="ps-lg-5 mt-4 mt-lg-0">
-              <Card className="p-4 text-center shadow">
-                <h4 className="fw-bold mb-3">Empieza hoy tu camino en el comercio internacional</h4>
-                <p>Hacé crecer tu negocio con conocimiento real, práctico y aplicado.</p>
-                <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  <Button variant="primary" className="fw-bold" onClick={handleBuyClick}>
-                    <FaShoppingCart className="me-2" />
-                    Comprar Asesoramiento
-                  </Button>
-                    <a
-                    href={guiaCurso}
-                    download='Guia_Curso_Importaciones.pdf'
-                    className='btn btn-outline-primary fw-bold'>
-                      <FaDownload className="me-2" />
-                      Descargar PDF
-                    </a>
-                </div>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </section>
     </>
   );
 };

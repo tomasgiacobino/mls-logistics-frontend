@@ -141,7 +141,7 @@ const CotizacionMaritima = () => {
           title="Generá tu mensaje para WhatsApp"
           description="Completa los siguientes datos para armar el mensaje de forma automática y enviarlo a nuestro equipo."
           fields={maritimoFields}
-          whatsappNumber="543492419489"
+          whatsappNumber="+5493492213436"
           messageTemplate={maritimoMessage}
         />
       </div>

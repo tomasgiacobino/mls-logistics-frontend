@@ -48,9 +48,6 @@ const Header = () => {
                 height="40"
                 className="me-2"
               />
-              {/* Texto */}
-              <span className='text-primary fw-bold me-2'>MLS&nbsp;</span>
-              <span className='text-light'>COMERCIO INTERNACIONAL</span>
             </div>
   
             {/* Botón hamburguesa: siempre a la derecha */}

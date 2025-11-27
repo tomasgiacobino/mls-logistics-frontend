@@ -145,7 +145,7 @@ const CotizacionAerea = () => {
             title="Generá tu mensaje para WhatsApp"
             description="Completa los siguientes datos para armar el mensaje de forma automática y enviarlo a nuestro equipo."
             fields={aereoFields}
-            whatsappNumber="543492419489"
+            whatsappNumber="+5493492213436"
             messageTemplate={aereoMessage}
           />
         </div>

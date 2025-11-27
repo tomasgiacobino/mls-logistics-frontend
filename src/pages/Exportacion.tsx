@@ -4,7 +4,7 @@ import { FaGlobe, FaArrowUp, FaCheckCircle, FaWhatsapp, FaShieldAlt } from 'reac
 import fondoExportacion from '../assets/images/camion2.jpg';
 
 const Exportacion = () => {
-  const whatsappNumber = 543492419489;
+  const whatsappNumber = '+5493492213436';
   const whatsappMessage = "Hola, me gustaría recibir más información sobre los servicios de exportación.";
 
   const handleSendMessage = () => {

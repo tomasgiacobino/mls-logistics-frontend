@@ -1,6 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap'
  import backgroundImage1 from '../assets/images/fondoHero.jpg'
-// import heroImage1 from '../assets/images/camion4.jpg'
+ import fondoYoutube from '../assets/images/manuFondo.png'; 
 
 
 const Hero = () => {
@@ -61,7 +61,7 @@ const Hero = () => {
               }}
             >
               <img 
-                src="https://img.youtube.com/vi/OEZ0GegIo-M/mqdefault.jpg" 
+                src={fondoYoutube}
                 alt="Ver video en YouTube"
                 className="w-100"
                 style={{ borderRadius: '12px 12px 0 0', objectFit: 'cover' }}

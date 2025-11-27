@@ -58,49 +58,49 @@ body, p, li, span, input, button {
   z-index: 2; 
 }
 
-/* PRUEBA */
-/* Estilos para el contenedor del logo + texto */
-.header-logo-text {
-  display: flex;
-  align-items: center;
-}
 
-/* En móviles (≤ 700px), cambia a columna */
-@media (max-width: 700px) {
-  .header-logo-text {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  /* Ajusta el margen del logo en móvil */
-  .header-logo-text img {
-    margin-bottom: 8px;
-    margin-right: 0;
-  }
-
-  /* Asegura que el texto no se desborde */
-  .header-logo-text span {
-    font-size: 0.95rem;
-  }
-}
-
-/* Asegura que el navbar no tenga overflow en desktop */
-.navbar {
-  min-width: 100%;
-  width: 100%;
-}
-
-/* Ajusta el padding en móvil */
-@media (max-width: 700px) {
-  .navbar .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-/* PRUEBA */
 
 /* SECCION HERO */
+
+/* SECCION Curso */
+/* Estilo para el hover de las tarjetas del curso */
+
+.curso-section{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh; 
+  position: relative;
+  overflow: hidden;
+}
+
+.curso-section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.curso-content {
+  position: relative;
+  z-index: 2; 
+}
+
+.course-card-content {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; /* Necesario para que la transformación funcione correctamente */
+}
+
+.course-card-content:hover {
+  transform: scale(1.1); /* Escala el elemento 1.1 veces su tamaño original */
+}
+
+/* SECCION Curso */
+
 
 /* SECCION ServiceCard */
 
@@ -115,18 +115,7 @@ body, p, li, span, input, button {
 
 /* SECCION ServiceCard */
 
-/* SECCION Curso */
-/* Estilo para el hover de las tarjetas del curso */
-.course-card-content {
-  transition: transform 0.3s ease-in-out;
-  display: inline-block; /* Necesario para que la transformación funcione correctamente */
-}
 
-.course-card-content:hover {
-  transform: scale(1.1); /* Escala el elemento 1.1 veces su tamaño original */
-}
-
-/* SECCION Curso */
 
 
 /* SECCION Aereo */
@@ -264,3 +253,46 @@ body, p, li, span, input, button {
   }
 }
 /* Seccion Partners  */
+
+
+/* HEADER */
+/* Estilos para el contenedor del logo + texto */
+.header-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+/* En móviles (≤ 700px), cambia a columna */
+@media (max-width: 700px) {
+  .header-logo-text {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Ajusta el margen del logo en móvil */
+  .header-logo-text img {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  /* Asegura que el texto no se desborde */
+  .header-logo-text span {
+    font-size: 0.95rem;
+  }
+}
+
+/* Asegura que el navbar no tenga overflow en desktop */
+.navbar {
+  min-width: 100%;
+  width: 100%;
+}
+
+/* Ajusta el padding en móvil */
+@media (max-width: 700px) {
+  .navbar .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+/* HEADER */
