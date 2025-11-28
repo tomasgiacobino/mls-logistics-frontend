@@ -1,5 +1,5 @@
 import { Container, Row, Col, ListGroup, Card, Button } from 'react-bootstrap';
-import { FaDownload, FaShoppingCart, FaPlay, FaComments, FaBook, FaFile, FaCalculator, FaShip, FaQuestionCircle, FaArrowUp, FaClipboard, FaMapSigns, FaExclamationTriangle, FaCheckCircle } from 'react-icons/fa';
+import { FaDownload, FaShoppingCart, FaPlay, FaComments, FaBook, FaFile, FaCalculator, FaShip, FaQuestionCircle, FaArrowUp, FaClipboard, FaMapSigns, FaExclamationTriangle, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import axios from 'axios';
 import CourseLearningCard from '../components/CourseLearningCard';
 import BenefitItem from '../components/BenefitItem';
@@ -8,16 +8,27 @@ import fondo from '../assets/images/Fondos/f1.jpg';
 
 const Curso = () => {
 
-  const handleBuyClick = async () => {
-    try{
-      const response = await axios.post<{ sandbox_init_point: string }>('https://mls-logistics-backend.onrender.com/create-order');
-      const sandboxUrl = response.data.sandbox_init_point;
-        window.location.href = sandboxUrl;
-    }catch (error){
-      console.error('Error al iniciar el proceso de pago:', error);
-      alert('Hubo un error al procesar tu solicitud. Por favor, inténtalo de nuevo.');
-    }
-  }
+  const whatsappNumber = '+5493492213436';
+  const whatsappMessage = "Hola! Estoy interesado en la asesoría y la guía para importar 2025.";
+
+  const handleSendMessage = () => {
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  
+  // DEJO COMENTADA LA FUNCION QUE VA AL BACKEND PARA CREAR UN PAGO DE MERCADO PAGO, ES UNA FUNCION A FUTURO
+  // const handleBuyClick = async () => {
+  //   try{
+  //     const response = await axios.post<{ sandbox_init_point: string }>('https://mls-logistics-backend.onrender.com/create-order');
+  //     const sandboxUrl = response.data.sandbox_init_point;
+  //       window.location.href = sandboxUrl;
+  //   }catch (error){
+  //     console.error('Error al iniciar el proceso de pago:', error);
+  //     alert('Hubo un error al procesar tu solicitud. Por favor, inténtalo de nuevo.');
+  //   }
+  // }
 
   return (
     <>
@@ -106,9 +117,17 @@ const Curso = () => {
                 <h4 className="fw-bold mb-3">Empieza hoy tu camino en el comercio internacional</h4>
                 <p>Hacé crecer tu negocio con conocimiento real, práctico y aplicado.</p>
                 <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  <Button variant="primary" className="fw-bold" onClick={handleBuyClick}>
+                  {/* <Button variant="primary" className="fw-bold" onClick={handleBuyClick}>
                     <FaShoppingCart className="me-2" />
                     Comprar Asesoramiento
+                  </Button> */}
+                  <Button
+                    variant="success"
+                    onClick={handleSendMessage}
+                    className="fw-bold fs-6"
+                  >
+                    <FaWhatsapp className="me-2" />
+                      Envía un mensaje de consulta
                   </Button>
                     <a
                     href={guiaCurso}
