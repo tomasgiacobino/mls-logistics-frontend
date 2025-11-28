@@ -1,6 +1,5 @@
 import { Container, Row, Col, ListGroup, Card, Button } from 'react-bootstrap';
-import { FaDownload, FaShoppingCart, FaPlay, FaComments, FaBook, FaFile, FaCalculator, FaShip, FaQuestionCircle, FaArrowUp, FaClipboard, FaMapSigns, FaExclamationTriangle, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
-import axios from 'axios';
+import { FaDownload, FaPlay, FaComments, FaBook, FaFile, FaCalculator, FaShip, FaQuestionCircle, FaArrowUp, FaClipboard, FaMapSigns, FaExclamationTriangle, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import CourseLearningCard from '../components/CourseLearningCard';
 import BenefitItem from '../components/BenefitItem';
 import guiaCurso from '../assets/pdfs/guiaCurso.pdf';
