@@ -8,7 +8,7 @@ interface Field {
   name: string;
   label: string;
   placeholder: string;
-  type: 'text' | 'select';
+  type: 'text' | 'select' | 'static';
   options?: string[];
 }
 
@@ -69,7 +69,7 @@ const WhatsappForm: React.FC<WhatsappFormProps> = ({
                                 setFormData((prevData) => ({ ...prevData, [target.name]: target.value }));
                               }}
                             />
-                          ) : (
+                          ) : field.type === 'select' ?  (
                             <Form.Select
                               name={field.name}
                               value={formData[field.name] || ''}
@@ -83,6 +83,10 @@ const WhatsappForm: React.FC<WhatsappFormProps> = ({
                                 <option key={option} value={option}>{option}</option>
                               ))}
                             </Form.Select>
+                          ) : (
+                            <div className="form-control-plaintext">
+                            {field.placeholder}
+                          </div>
                           )}
                         </Form.Group>
                       </Col>

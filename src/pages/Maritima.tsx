@@ -14,8 +14,8 @@ const CotizacionMaritima = () => {
     { name: 'destino', label: 'Destino', placeholder: 'Ej. Buenos Aires, Argentina', type: 'text' as 'text' },
     { name: 'tipoMercaderia', label: 'Tipo de Mercadería', placeholder: 'Ej. Maquinaria, juguetes', type: 'text' as 'text' },
     { name: 'incoterm', label: 'Incoterm', placeholder: 'Selecciona un Incoterm', type: 'select' as 'select', options: ['FOB', 'EXW', 'CFR'] },
-    { name: 'packingList', label: 'Packing List', placeholder: 'Cantidad y peso total', type: 'text' as 'text' },
-    { name: 'invoiceProforma', label: 'Invoice Proforma', placeholder: 'Valor total de la mercadería', type: 'text' as 'text' },
+    { name: 'packingList', label: 'Packing List', placeholder: 'Se debe adjuntar archivo por Whatsapp', type: 'static' as 'static' },
+    { name: 'invoiceProforma', label: 'Invoice Proforma', placeholder: 'Se debe adjuntar archivo por Whatsapp', type: 'static' as 'static' },
     { name: 'hsCode', label: 'HS Code', placeholder: 'Código de clasificación', type: 'text' as 'text' },
     { name: 'cargaApilable', label: 'Carga Apilable', placeholder: 'Selecciona una opción', type: 'select' as 'select', options: ['Sí', 'No'] },
     { name: 'palletTipo', label: 'Tipo de Palet', placeholder: 'Ej. Euro Pallet', type: 'text' as 'text' },
@@ -24,19 +24,19 @@ const CotizacionMaritima = () => {
 
   const maritimoMessage = (data: Record<string, string>) => {
     return `
-¡Hola! Necesito una cotización de flete marítimo con la siguiente información:
-
-- Origen: ${data.origen}
-- Destino: ${data.destino}
-- Tipo de Mercadería: ${data.tipoMercaderia}
-- Incoterm: ${data.incoterm}
-- Packing List: ${data.packingList}
-- Invoice Proforma: ${data.invoiceProforma}
-- HS Code: ${data.hsCode}
-- Carga Apilable: ${data.cargaApilable}
-- Tipo de Palet: ${data.palletTipo}
-- Medida del Palet: ${data.palletMedida}
-    `;
+  ¡Hola! Necesito una cotización de flete marítimo con la siguiente información:
+  
+  - Origen: ${data.origen || 'No especificado.'}
+  - Destino: ${data.destino || 'No especificado'}
+  - Tipo de Mercadería: ${data.tipoMercaderia || 'No especificado.'}
+  - Incoterm: ${data.incoterm || 'No especificado.'}
+  - Packing List: Se debe adjuntar archivo por WhatsApp.
+  - Invoice Proforma: Se debe adjuntar archivo por WhatsApp.
+  - HS Code: ${data.hsCode || 'No especificado.'}
+  - Carga Apilable: ${data.cargaApilable || 'No especificado.'}
+  - Tipo de Palet: ${data.palletTipo || 'No especificado.'}
+  - Medida del Palet: ${data.palletMedida || 'No especificado.'}
+    `.trim();
   };
 
   return (

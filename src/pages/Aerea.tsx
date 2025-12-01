@@ -14,8 +14,8 @@ const CotizacionAerea = () => {
     { name: 'destino', label: 'Destino', placeholder: 'Ej. Buenos Aires, Argentina', type: 'text' as 'text' },
     { name: 'peso', label: 'Peso (Kg)', placeholder: 'Ej. 50', type: 'text' as 'text' },
     { name: 'tipoMercaderia', label: 'Tipo de Mercadería', placeholder: 'Ej. Ropa y calzado', type: 'text' as 'text' },
-    { name: 'incoterm', label: 'Incoterm', placeholder: 'Selecciona un Incoterm', type: 'select' as 'select', options: ['FOB', 'EXW', 'CFR'] },
-    { name: 'invoiceProforma', label: 'Invoice Proforma', placeholder: 'Valor total de la mercadería', type: 'text' as 'text' },
+    { name: 'packingList', label: 'Packing List', placeholder: 'Se debe adjuntar archivo por Whatsapp', type: 'static' as 'static'},
+    { name: 'invoiceProforma', label: 'Invoice Proforma', placeholder: 'Se debe adjuntar archivo por Whatsapp', type: 'static' as 'static' },
     { name: 'hsCode', label: 'HS Code', placeholder: 'Código de clasificación', type: 'text' as 'text' },
   ];
 
@@ -23,13 +23,13 @@ const CotizacionAerea = () => {
     return `
 ¡Hola! Necesito una cotización de flete aéreo con la siguiente información:
 
-- Origen: ${data.origen}
-- Destino: ${data.destino}
-- Peso (Kg): ${data.peso}
-- Tipo de Mercadería: ${data.tipoMercaderia}
-- Incoterm: ${data.incoterm}
-- Invoice Proforma: ${data.invoiceProforma}
-- HS Code: ${data.hsCode}
+- Origen: ${data.origen || 'No especificado.'}
+- Destino: ${data.destino || 'No especificado.'}
+- Peso (Kg): ${data.peso || 'No especificado.'}
+- Packing List: Se debe adjuntar archivo por WhatsApp.
+- Invoice Proforma: Se debe adjuntar archivo por WhatsApp.
+- Invoice Proforma: ${data.invoiceProforma || 'No especificado.'}
+- HS Code: ${data.hsCode || 'No especificado.'}
     `;
   };
 
