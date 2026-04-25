@@ -1,6 +1,6 @@
 // src/pages/CotizacionMaritima.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaFile, FaClipboard, FaShip } from 'react-icons/fa';
+import { FaFile, FaClipboard, FaShip, FaCheckCircle } from 'react-icons/fa';
 import fondoBarco from '../assets/images/paisaje3.jpg';
 import WhatsappForm from '../components/WhatsappForm';
 import { TbListDetails } from 'react-icons/tb';
@@ -131,7 +131,44 @@ const CotizacionMaritima = () => {
         </Container>
       </section>
 
-      <div className="py-5 text-dark">
+      {/* Sección: Cálculo de Costos e Impuestos */}
+      <section className="py-5 bg-white text-dark">
+          <Container>
+              <Row className="justify-content-center">
+                  <Col lg={8}>
+                      <h2 className="fw-bold text-primary mb-3">Sabé exactamente cuánto te va a costar antes de invertir</h2>
+                      <p className="lead mb-4">
+                          Antes de que pongas un peso, te entregamos el costo real de tu importación puesta en Argentina. Sin sorpresas, sin costos ocultos, con todos los números sobre la mesa.
+                      </p>
+                      <h5 className="fw-bold mb-3">Lo que calculamos:</h5>
+                      <ul className="list-unstyled">
+                          <li className="d-flex align-items-start gap-3 mb-3">
+                              <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
+                              <span>Costo del producto en origen (FOB o EXW según tu operación).</span>
+                          </li>
+                          <li className="d-flex align-items-start gap-3 mb-3">
+                              <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
+                              <span>Flete internacional según la modalidad elegida.</span>
+                          </li>
+                          <li className="d-flex align-items-start gap-3 mb-3">
+                              <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
+                              <span>Derechos de importación, IVA, percepciones y tasas estadísticas aplicables.</span>
+                          </li>
+                          <li className="d-flex align-items-start gap-3 mb-3">
+                              <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
+                              <span>Gastos operativos, honorarios de despachante y servicios logísticos locales.</span>
+                          </li>
+                          <li className="d-flex align-items-start gap-3 mb-3">
+                              <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
+                              <span>Costo final puesto en tu depósito, listo para definir tu precio de venta.</span>
+                          </li>
+                      </ul>
+                  </Col>
+              </Row>
+          </Container>
+      </section>
+
+      <div className="py-5 bg-light text-dark">
         <Container>
           <h2 className="text-center fw-bold mb-4">
             Completa y cotiza
