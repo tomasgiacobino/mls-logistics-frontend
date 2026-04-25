@@ -17,6 +17,8 @@ const Aerea = React.lazy(() => import('./pages/Aerea'));
 const Maritima = React.lazy(() => import('./pages/Maritima'));    
 const Importador = React.lazy(() => import('./pages/Importador'));
 const Exportacion = React.lazy(() => import('./pages/Exportacion'));
+const AgenteDeCompras = React.lazy(() => import('./pages/AgenteDeCompras'));
+const GestionComex = React.lazy(() => import('./pages/GestionComex'));
 // ... y las otras páginas que creaste
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path='/importacionMaritima' element={<Maritima />} />
           <Route path='/importador' element={<Importador />} />
           <Route path='/exportacion' element={<Exportacion />} />
+          <Route path='/agenteDeCompras' element={<AgenteDeCompras />} />
+          <Route path='/gestionComex' element={<GestionComex />} />
           <Route path="/success" element={<SuccessPage />} />
           <Route path="/failure" element={<FailurePage />} />
           <Route path="/pending" element={<PendingPage />} />

@@ -242,16 +242,45 @@ body, p, li, span, input, button {
 
 /* Seccion Partners  */
 /* Partners.module.css */
-.partnersSection {
+
+/*.partnersSection {
   max-height: 490px; /* Para móviles */
-}
+/*}/*
+
 
 /* Para tablets y desktop (md y arriba) */
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {
   .partnersSection {
     max-height: 290px;
   }
 }
+
+/* Carrusel infinito */
+.partners-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scrollPartners 40s linear infinite;
+  will-change: transform;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollPartners {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+/* Carrusel infinito */
+
 /* Seccion Partners  */
 
 

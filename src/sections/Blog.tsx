@@ -28,9 +28,9 @@ const blogPosts = [
 
   const Blog = () => {
     return (
-      <section className="bg-light py-5" id="blog">
+      <section className="py-3" id="blog">
         <Container>
-          <h2 className="text-center mb-5 text-primary">Últimas Noticias de Comercio Exterior</h2>
+          <h4 className="text-center mb-3 text-primary">Últimas Noticias de Comercio Exterior</h4>
           <Row>
             {blogPosts.map((post, index) => (
               <BlogCard key={index} image={post.image} title={post.title} excerpt={post.excerpt} link={post.link} />
