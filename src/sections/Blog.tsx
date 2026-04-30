@@ -28,7 +28,7 @@ const blogPosts = [
 
   const Blog = () => {
     return (
-      <section className="py-3" id="blog">
+      <section className="bg-light py-3" id="blog">
         <Container>
           <h4 className="text-center mb-3 text-primary">Últimas Noticias de Comercio Exterior</h4>
           <Row>

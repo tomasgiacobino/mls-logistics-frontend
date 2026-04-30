@@ -10,7 +10,7 @@ import React from 'react';
 
 const Partners = () => {
   return (
-    <section className="bg-light py-5 partnersSection">
+    <section className="py-5 partnersSection">
       <Container>
         <h2 className="text-center mb-3 text-primary">Red global de operadores logísticos</h2>
         <p className="text-center mb-5 lead">

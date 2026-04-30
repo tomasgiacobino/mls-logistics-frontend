@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaPlane, FaFile, FaClipboard, FaDownload, FaCheckCircle } from 'react-icons/fa';
 import GuiaImportacionAereaPDF from '../assets/pdfs/guiaAerea.pdf';
-import fondoAvion from '../assets/images/avion4.jpg'
+import fondoHeroAvion from '../assets/videos/videoAvion2.mp4'
 import WhatsappForm from '../components/WhatsappForm';
 import { AiOutlineQrcode } from 'react-icons/ai';
 import { RiBillFill } from 'react-icons/ri';
@@ -35,6 +35,90 @@ const CotizacionAerea = () => {
     <>
       {/* Sección 1: Hero */}
       <section className="py-5 text-white hero-aereo d-flex justify-content-center align-items-center"
+          style={{ position: 'relative', overflow: 'hidden' }}>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center 80%',
+              zIndex: 0
+            }}
+          >
+            <source src={fondoHeroAvion} type="video/mp4" />
+          </video>
+          <div className='aereo-content w-100'>
+              <Container>
+                  {/* Título + descripción + íconos centrado arriba */}
+                  <Row className="justify-content-center text-center mb-4">
+                      <Col lg={10}>
+                          <h1 className="fw-bold">
+                              Cotizá tu <span className='text-primary'>importación Aérea</span> ✈️
+                          </h1>
+                          <p className="lead mt-3">
+                              Cotiza tu envío aéreo con nosotros, contamos con depósito en China, EE. UU. y somos partners oficiales de DHL y FedEx. ¡Obtené tu cotización en menos de 24 horas!
+                          </p>
+                          <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
+                              <FaFile className="h1" />
+                              <FaClipboard className="h1" />
+                              <FaPlane className="h1" />
+                          </div>
+                      </Col>
+                  </Row>
+
+                  {/* 50/50 video placeholder izquierda + cards derecha */}
+                  <Row className="g-4 align-items-center mt-2">
+                      <Col lg={6}>
+                          {/* PENDIENTE: reemplazar por video explicativo */}
+                          <div
+                              style={{
+                                  width: '100%',
+                                  aspectRatio: '16/9',
+                                  background: 'rgba(26,26,46,0.8)',
+                                  borderRadius: '12px',
+                                  border: '2px dashed #0d6efd',
+                                  color: '#0d6efd',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center',
+                                  fontWeight: 'bold',
+                                  fontSize: '1.1rem',
+                                  textAlign: 'center',
+                                  padding: '2rem'
+                              }}
+                          >
+                              VIDEO DESPACHO AÉREO FORMAL — PENDIENTE
+                          </div>
+                      </Col>
+                      <Col lg={6}>
+                          <div className="d-flex flex-column gap-3">
+                              <div className="p-3 rounded shadow-lg bg-white text-dark">
+                                  <h5 className="fw-bold mb-2">Servicios de Courier Aéreo</h5>
+                                  <p className="small mb-1">HASTA 3000 USD por factura. Kilos ilimitados en paquetes de hasta 50 kg.</p>
+                                  <p className="small fw-bold mb-1">Tarifas preferenciales y precios competitivos.</p>
+                                  <p className="small fst-italic text-secondary mb-0">Servicio Apto para Monotributistas, Importadores, Responsables inscriptos y Empresas.</p>
+                              </div>
+                              <div className="p-3 rounded shadow-lg bg-white text-dark">
+                                  <h5 className="fw-bold mb-2">Despacho Aéreo Formal</h5>
+                                  <p className="small mb-1">Sin límite de valor ($) ni kilos.</p>
+                                  <p className="small fw-bold mb-0">Servicio para Importadores, Responsables Inscriptos y Empresas.</p>
+                              </div>
+                          </div>
+                      </Col>
+                  </Row>
+              </Container>
+          </div>
+      </section>
+
+
+      {/* <section className="py-5 text-white hero-aereo d-flex justify-content-center align-items-center"
           style={{backgroundImage: `url(${fondoAvion})`}}>
           <div className='aereo-content w-100'>
               <Container>
@@ -72,18 +156,17 @@ const CotizacionAerea = () => {
                   </Row>
               </Container>
           </div>
-      </section>
+      </section> */}
 
       {/* Sección: Video Despacho Aéreo Formal */}
-      <section className="py-5">
+      {/* <section className="py-5">
           <Container>
               <Row className="align-items-center">
                   <Col lg={6} className="mb-4 mb-lg-0">
                       <h2 className="fw-bold text-primary mb-3">¿Cómo funciona el Despacho Aéreo Formal?</h2>
                       <p className="lead">Mirá el video y entendé cómo podemos ayudarte a operar sin límites.</p>
                   </Col>
-                  <Col lg={6}>
-                      {/* PENDIENTE: reemplazar por video explicativo */}
+                  <Col lg={6}>                     
                       <div
                           style={{
                               width: '100%',
@@ -106,7 +189,7 @@ const CotizacionAerea = () => {
                   </Col>
               </Row>
           </Container>
-      </section>
+      </section> */}
 
       {/* Sección 2: Proceso para obtener la cotización */}
       <section className="py-5 bg-light text-dark">

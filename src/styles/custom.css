@@ -31,15 +31,20 @@ body, p, li, span, input, button {
 
 
 /* SECCION HERO */
-
-  .hero-section{
+  /* .hero-section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 70vh; 
     position: relative;
     overflow: hidden;
-  }
+  } */
+
+  .hero-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+}
 
   .hero-section::after{
     content: '';
@@ -57,9 +62,6 @@ body, p, li, span, input, button {
   position: relative;
   z-index: 2; 
 }
-
-
-
 /* SECCION HERO */
 
 /* SECCION Curso */
@@ -240,21 +242,7 @@ body, p, li, span, input, button {
 /* SECCION Exportacion */
 
 
-/* Seccion Partners  */
-/* Partners.module.css */
-
-/*.partnersSection {
-  max-height: 490px; /* Para móviles */
-/*}/*
-
-
 /* Para tablets y desktop (md y arriba) */
-
-/*@media (min-width: 768px) {
-  .partnersSection {
-    max-height: 290px;
-  }
-}
 
 /* Carrusel infinito */
 .partners-track-wrapper {
@@ -265,15 +253,12 @@ body, p, li, span, input, button {
 .partners-track {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 120px;
   width: max-content;
   animation: scrollPartners 40s linear infinite;
   will-change: transform;
 }
 
-.partners-track:hover {
-  animation-play-state: paused;
-}
 
 @keyframes scrollPartners {
   0% { transform: translateX(0); }
@@ -282,6 +267,66 @@ body, p, li, span, input, button {
 /* Carrusel infinito */
 
 /* Seccion Partners  */
+
+
+/* Seccion Agente de Compras */
+
+.hero-agente {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-agente::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.agente-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Seccion Agente de Compras */
+
+/* Seccion Gestion Comex */
+
+.hero-gestion {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a2e;
+}
+
+.hero-gestion::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.gestion-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Seccion Gestion Comex */
 
 
 /* HEADER */
