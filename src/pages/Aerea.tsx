@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaPlane, FaFile, FaClipboard, FaDownload, FaCheckCircle } from 'react-icons/fa';
 import GuiaImportacionAereaPDF from '../assets/pdfs/guiaAerea.pdf';
-import fondoHeroAvion from '../assets/videos/videoavion2Comp.mp4'
+import fondoHeroAvion from '../assets/videos/videoavionComp.mp4'
 import WhatsappForm from '../components/WhatsappForm';
 import { AiOutlineQrcode } from 'react-icons/ai';
 import { RiBillFill } from 'react-icons/ri';
