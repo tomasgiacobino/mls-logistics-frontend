@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import ReactGA from 'react-ga4';
 
 // Interfaz para la respuesta del backend
 interface PaymentVerificationResponse {
@@ -35,6 +36,7 @@ const SuccessPage = () => {
 
                 if (response.data.verified) {
                     setPaymentStatus('approved');
+                    ReactGA.event('purchase_complete');
                 } else {
                     setPaymentStatus('rejected');
                 }

@@ -9,6 +9,10 @@ import SuccessPage from './pages/MP/SuccessPage';
 import FailurePage from './pages/MP/FailurePage';
 import PendingPage from './pages/MP/PendingPage';
 
+import ReactGA from 'react-ga4';
+
+// PENDIENTE: reemplazar 'G-XXXXXXXXXX' con el ID real del cliente
+ReactGA.initialize('G-XXXXXXXXXX');
 
 // Carga diferida de las páginas para optimizar el rendimiento
 const Home = React.lazy(() => import('./pages/Home'));

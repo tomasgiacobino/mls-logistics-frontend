@@ -1,10 +1,12 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import fondo from '../assets/images/Fondos/f1.jpg';
+import ReactGA from 'react-ga4';
 
 const whatsappNumber = '+5493492213436';
 
 const handleBuyClick = async () => {
+  ReactGA.event('checkout_programa_click');
   try {
     const response = await fetch('https://mls-logistics-backend.onrender.com/create-order', {
       method: 'POST',
