@@ -16,7 +16,8 @@ const CierreSection = () => {
             </p>
             {/* PENDIENTE: reemplazar href="#" con link real de Google Calendar */}
             <a
-              href="#"
+              href="https://calendar.app.google/4VcAFfjMj1GLnhxx8"
+              target='_blank'
               className="btn btn-primary fw-bold px-5 py-3 fs-5"
             >
               <FaCalendarAlt className="me-2" />

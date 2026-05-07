@@ -1,11 +1,17 @@
+/* ==========================================
+   VARIABLES GLOBALES
+   ========================================== */
 :root {
-  --bs-primary: #1e72b8;   /* Azul protagonista (confianza, profesionalismo) */
-  --bs-secondary: #ffffff; /* Blanco */
-  --bs-dark: #222222;      /* Negro/gris oscuro */
-  --bs-light: #ffffff;     /* Blanco */
-  --bs-info: #1e72b8;      /* Acentos = mismo azul principal (coherencia) */
+  --bs-primary: #1e72b8;
+  --bs-secondary: #ffffff;
+  --bs-dark: #222222;
+  --bs-light: #ffffff;
+  --bs-info: #1e72b8;
 }
 
+/* ==========================================
+   TIPOGRAFÍA
+   ========================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Funnel Display', sans-serif;
   font-weight: 600;
@@ -16,7 +22,9 @@ body, p, li, span, input, button {
   font-weight: 400;
 }
 
-  /* Transición suave para los componentes de la página */
+/* ==========================================
+   TRANSICIONES GLOBALES
+   ========================================== */
 .page-transition-enter {
   opacity: 0;
   transform: translateY(20px);
@@ -28,55 +36,115 @@ body, p, li, span, input, button {
   transition: opacity 300ms ease-in, transform 300ms ease-in;
 }
 
+/* ==========================================
+   COMPONENTES GLOBALES
+   ========================================== */
 
+/* ServiceCard */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* SECCION HERO */
-  /* .hero-section{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 70vh; 
-    position: relative;
-    overflow: hidden;
-  } */
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
 
-  .hero-section {
+/* ==========================================
+   HEADER
+   ========================================== */
+.navbar {
+  min-width: 100%;
+  width: 100%;
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .header-logo-text {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .header-logo-text img {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  .header-logo-text span {
+    font-size: 0.95rem;
+  }
+
+  .navbar .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ==========================================
+   HOME — HERO
+   ========================================== */
+.hero-section {
   position: relative;
   overflow: hidden;
   min-height: 70vh;
 }
 
-  .hero-section::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1;
-  }
-
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
 
 .hero-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
-/* SECCION HERO */
 
-/* SECCION Curso */
-/* Estilo para el hover de las tarjetas del curso */
+/* ==========================================
+   HOME — PARTNERS
+   ========================================== */
+.partners-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 
-.curso-section{
+.partners-track {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  width: max-content;
+  animation: scrollPartners 40s linear infinite;
+  will-change: transform;
+}
+
+@keyframes scrollPartners {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ==========================================
+   CURSO
+   ========================================== */
+.curso-section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 70vh; 
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
 }
 
-.curso-section::after{
+.curso-section::after {
   content: '';
   position: absolute;
   top: 0;
@@ -89,43 +157,26 @@ body, p, li, span, input, button {
 
 .curso-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .course-card-content {
   transition: transform 0.3s ease-in-out;
-  display: inline-block; /* Necesario para que la transformación funcione correctamente */
+  display: inline-block;
 }
 
 .course-card-content:hover {
-  transform: scale(1.1); /* Escala el elemento 1.1 veces su tamaño original */
+  transform: scale(1.1);
 }
 
-/* SECCION Curso */
-
-
-/* SECCION ServiceCard */
-
-.card-hover{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-10px) scale(1.03); /* Se eleva y se expande ligeramente */
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* Aumenta la sombra */
-}
-
-/* SECCION ServiceCard */
-
-
-
-
-/* SECCION Aereo */
+/* ==========================================
+   AEREA
+   ========================================== */
 .hero-aereo {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 70vh; 
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
 }
@@ -143,17 +194,17 @@ body, p, li, span, input, button {
 
 .aereo-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
-/* SECCION Aereo */
-
-/* SECCION Maritimo */
+/* ==========================================
+   MARITIMA
+   ========================================== */
 .hero-maritimo {
   background-size: cover;
   background-position: 50% 90%;
   background-repeat: no-repeat;
-  min-height: 70vh; 
+  min-height: 70vh;
   position: relative;
   overflow: hidden;
 }
@@ -171,12 +222,12 @@ body, p, li, span, input, button {
 
 .maritimo-content {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
-/* SECCION Maritimo */
-
-/* SECCION Importador */
+/* ==========================================
+   IMPORTADOR
+   ========================================== */
 .hero-importador {
   position: relative;
   background-size: cover;
@@ -187,7 +238,6 @@ body, p, li, span, input, button {
   align-items: center;
   z-index: 1;
 }
-
 
 .hero-importador::before {
   content: '';
@@ -205,10 +255,9 @@ body, p, li, span, input, button {
   z-index: 2;
 }
 
-/* SECCION Importador */
-
-/* SECCION Exportacion */
-
+/* ==========================================
+   EXPORTACION
+   ========================================== */
 .hero-exportacion {
   position: relative;
   background-size: cover;
@@ -219,7 +268,6 @@ body, p, li, span, input, button {
   align-items: center;
   z-index: 1;
 }
-
 
 .hero-exportacion::before {
   content: '';
@@ -232,45 +280,14 @@ body, p, li, span, input, button {
   z-index: -1;
 }
 
-
 .exportacion-content {
   position: relative;
   z-index: 2;
 }
 
-
-/* SECCION Exportacion */
-
-
-/* Para tablets y desktop (md y arriba) */
-
-/* Carrusel infinito */
-.partners-track-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-.partners-track {
-  display: flex;
-  align-items: center;
-  gap: 120px;
-  width: max-content;
-  animation: scrollPartners 40s linear infinite;
-  will-change: transform;
-}
-
-
-@keyframes scrollPartners {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-/* Carrusel infinito */
-
-/* Seccion Partners  */
-
-
-/* Seccion Agente de Compras */
-
+/* ==========================================
+   AGENTE DE COMPRAS
+   ========================================== */
 .hero-agente {
   background-size: cover;
   background-position: center;
@@ -296,10 +313,9 @@ body, p, li, span, input, button {
   z-index: 2;
 }
 
-/* Seccion Agente de Compras */
-
-/* Seccion Gestion Comex */
-
+/* ==========================================
+   GESTION COMEX
+   ========================================== */
 .hero-gestion {
   background-size: cover;
   background-position: center;
@@ -325,48 +341,3 @@ body, p, li, span, input, button {
   position: relative;
   z-index: 2;
 }
-
-/* Seccion Gestion Comex */
-
-
-/* HEADER */
-/* Estilos para el contenedor del logo + texto */
-.header-logo-text {
-  display: flex;
-  align-items: center;
-}
-
-/* En móviles (≤ 700px), cambia a columna */
-@media (max-width: 700px) {
-  .header-logo-text {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  /* Ajusta el margen del logo en móvil */
-  .header-logo-text img {
-    margin-bottom: 8px;
-    margin-right: 0;
-  }
-
-  /* Asegura que el texto no se desborde */
-  .header-logo-text span {
-    font-size: 0.95rem;
-  }
-}
-
-/* Asegura que el navbar no tenga overflow en desktop */
-.navbar {
-  min-width: 100%;
-  width: 100%;
-}
-
-/* Ajusta el padding en móvil */
-@media (max-width: 700px) {
-  .navbar .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-/* HEADER */

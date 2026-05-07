@@ -30,7 +30,8 @@ const AsesoriaCTA = () => {
               </div>
               {/* PENDIENTE: reemplazar "#" con el link de Google Calendar */}
               <a
-                href="#"
+                href="https://calendar.app.google/4VcAFfjMj1GLnhxx8"
+                target='_blank'
                 className="btn btn-light text-primary fw-bold px-4 py-3 w-100"
                 style={{ maxWidth: '360px' }}
               >

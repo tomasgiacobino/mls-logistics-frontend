@@ -1,7 +1,7 @@
 // src/pages/Exportacion.tsx
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaGlobe, FaArrowUp, FaCheckCircle, FaWhatsapp, FaShieldAlt } from 'react-icons/fa';
-import fondoExportacion from '../assets/images/camion2.jpg';
+import fondoExportacion from '../assets/images/Fondos/camion2.jpg';
 
 const Exportacion = () => {
   const whatsappNumber = '+5493492213436';

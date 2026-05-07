@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
-import fondoGestion from '../assets/images/avion.jpg';
+import fondoGestion from '../assets/images/Fondos/fondBarco.jpg';
 
 const whatsappNumber = '+5493492213436';
 const whatsappMessage = 'Quiero más información sobre Gestión Comex para mi empresa';

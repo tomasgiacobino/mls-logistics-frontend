@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
-import fondoAgente from '../assets/images/paisaje2.jpg';
+import fondoAgente from '../assets/images/Fondos/paisaje2.jpg';
 
 const whatsappNumber = '+5493492213436';
 const whatsappMessage = 'Estoy interesado en el servicio de Agente de Compras';

@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaArrowUp, FaUser, FaFileContract, FaWhatsapp } from 'react-icons/fa';
 import { FaFile, FaCheckCircle, FaRocket, FaCubes } from 'react-icons/fa';
-import fondoImportador from '../assets/images/camion3.jpg';
+import fondoImportador from '../assets/images/Fondos/camion3.jpg';
 import { TbPackageImport } from 'react-icons/tb';
 import { PiCertificateFill } from 'react-icons/pi';
 import { BsCurrencyExchange } from 'react-icons/bs';

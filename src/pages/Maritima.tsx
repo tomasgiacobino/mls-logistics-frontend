@@ -1,7 +1,7 @@
 // src/pages/CotizacionMaritima.tsx
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaFile, FaClipboard, FaShip, FaCheckCircle } from 'react-icons/fa';
-import fondoBarco from '../assets/images/paisaje3.jpg';
+import fondoBarco from '../assets/images/Fondos/paisaje3.jpg';
 import WhatsappForm from '../components/WhatsappForm';
 import { TbListDetails } from 'react-icons/tb';
 import { BsStack } from 'react-icons/bs';

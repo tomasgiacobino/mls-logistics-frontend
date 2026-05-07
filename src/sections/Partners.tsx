@@ -4,7 +4,7 @@ import { FaCheckCircle } from 'react-icons/fa';
 import dhlLogo from '../assets/images/partners/dhl.png';
 import fedexLogo from '../assets/images/partners/fedex.png';
 import ups from '../assets/images/partners/ups2.png';
-import maersk from '../assets/images/partners/maerks.png';
+import maersk from '../assets/images/partners/maersk.png';
 import hapag from '../assets/images/partners/hapag.png';
 import React from 'react';
 
