@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import heroBarco from '../assets/videos/fondohero.mp4'
+import heroBarco from '../assets/videos/fondoHero.mp4'
 
 const Hero = () => {
     return (
