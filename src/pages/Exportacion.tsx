@@ -20,10 +20,10 @@ const Exportacion = () => {
         className="py-5 text-white hero-exportacion d-flex justify-content-center align-items-center" 
         style={{ backgroundImage: `url(${fondoExportacion})` }}
       >
-        <div className='exportacion-content d-flex align-items-center'>
+        <div className='exportacion-content d-flex align-items-center w-100'>
           <Container>
-            <Row className="justify-content-center text-center">
-              <Col lg={10}>
+            <Row className="align-items-center g-4">
+              <Col lg={6}>
                 <h1 className="fw-bold display-4">
                   🌍 <span className="text-primary">Exportá</span> con nosotros
                 </h1>
@@ -31,9 +31,29 @@ const Exportacion = () => {
                   El mercado internacional está lleno de oportunidades y <span className='fw-bold'>tu producto puede ser parte de él.</span> Vender al mundo no solo significa aumentar tus ingresos, sino también hacer crecer tu marca de manera exponencial y posicionarla en nuevos mercados.
                 </p>
                 <p className="lead mt-3 fs-4">
-                  En MM Importaciones te acompañamos a transformar tu emprendimiento o empresa en un <span className='fw-bold'>jugador global</span>,
-                   conectándote con clientes de distintos países y guiándote en cada paso del proceso exportador.
+                  En MM Importaciones te acompañamos a transformar tu emprendimiento o empresa en un <span className='fw-bold'>jugador global</span>, conectándote con clientes de distintos países y guiándote en cada paso del proceso exportador.
                 </p>
+              </Col>
+              <Col lg={6}>
+                <div
+                  style={{
+                    width: '100%',
+                    aspectRatio: '16/9',
+                    background: 'rgba(26,26,46,0.8)',
+                    borderRadius: '12px',
+                    border: '2px dashed #0d6efd',
+                    color: '#0d6efd',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 'bold',
+                    fontSize: '1.1rem',
+                    textAlign: 'center',
+                    padding: '2rem'
+                  }}
+                >
+                  VIDEO PRESENTACIÓN — PENDIENTE
+                </div>
               </Col>
             </Row>
           </Container>

@@ -14,7 +14,7 @@ const Services = () => {
           <ServiceCard
             icon="bi-mortarboard"
             title="Aprende a importar con nosotros"
-            description="Capacitación, guía práctica y asesoramiento para aprender a importar desde cero, con herramientas reales y explicaciones claras. Ideal para quienes quieren iniciar en el comercio internacional, reducir costos comprando en el exterior o lanzar su propio negocio."
+            description="Capacitación, guía práctica y asesoramiento para aprender a importar desde cero, con herramientas reales y explicaciones claras."
             buttonText="Conocer más"
             to="/curso"
           />
@@ -40,13 +40,6 @@ const Services = () => {
             to="/importador"
           />
           <ServiceCard
-            icon="bi-globe-americas"
-            title="Exportá con nosotros"
-            description="Conecta tus productos con el Mercado Global."
-            buttonText="Conectar ahora"
-            to="/exportacion"
-          />
-          <ServiceCard
             icon="bi-search"
             title="Agente de Compras"
             description="Investigamos el mercado por vos, verificamos proveedores confiables y gestionamos el proceso de cotización completo. Vos recibís un informe consolidado y tomás la decisión con información real."
@@ -59,6 +52,13 @@ const Services = () => {
             description="Tu departamento de comercio exterior. Nos integramos como tu equipo: gestionamos importaciones y exportaciones, coordinamos con todos los actores del proceso y te mantenemos informado en cada etapa."
             buttonText="Conocer más"
             to="/gestionComex"
+          />
+          <ServiceCard
+            icon="bi-globe-americas"
+            title="Exportá con nosotros"
+            description="Conecta tus productos con el Mercado Global."
+            buttonText="Conectar ahora"
+            to="/exportacion"
           />
         </Row>
       </Container>

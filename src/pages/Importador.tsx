@@ -23,40 +23,62 @@ const Importador = () => {
         className="py-5 text-white hero-importador d-flex justify-content-center align-items-center"
         style={{ backgroundImage: `url(${fondoImportador})` }}
       >
-        <div className='importador-content d-flex align-items-center'>
+        <div className='importador-content d-flex align-items-center w-100'>
           <Container>
-            <Row className="justify-content-center text-center">
-              <Col lg={10}>
+            <Row className="align-items-center g-4">
+              <Col lg={6} className="text-center text-lg-start">
                 <h1 className="fw-bold display-4">
                   Inscripción como <span className="text-primary">Importador/Exportador</span> para Empresas y Responsables Inscriptos
                 </h1>
                 <p className="lead mt-3 fs-5">
                   Gestionamos tu alta ante ARCA para que tu empresa pueda operar en comercio exterior de forma legal, optimizar su estructura de costos y escalar su operación.
                 </p>
-                <Button
-                  variant="primary"
-                  className="fw-bold mt-3 px-4 py-3"
-                  onClick={handleWhatsapp}
+                <div className="d-flex justify-content-center mt-3">
+                  <Button
+                    variant="primary"
+                    className="fw-bold px-4 py-3"
+                    onClick={handleWhatsapp}
+                  >
+                    <FaWhatsapp className="me-2 fs-5" />
+                    Hablar con un asesor
+                  </Button>
+                </div>
+              </Col>
+              <Col lg={6}>
+                <div
+                  style={{
+                    width: '100%',
+                    aspectRatio: '16/9',
+                    background: 'rgba(26,26,46,0.8)',
+                    borderRadius: '12px',
+                    border: '2px dashed #0d6efd',
+                    color: '#0d6efd',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 'bold',
+                    fontSize: '1.1rem',
+                    textAlign: 'center',
+                    padding: '2rem'
+                  }}
                 >
-                  <FaWhatsapp className="me-2 fs-5" />
-                  Hablar con un asesor
-                </Button>
+                  VIDEO EXPLICATIVO — PENDIENTE
+                </div>
               </Col>
             </Row>
           </Container>
         </div>
       </section>
 
-      {/* Accedés a + Beneficios + Video */}
+      {/* Accedés a + Beneficios principales */}
       <section className="py-5 bg-light text-dark">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
-              {/* Accedés a */}
+          <Row className="g-4">
+            <Col lg={6} className="col-divisor">
               <h4 className="fw-bold mb-4">
                 <FaCheckCircle className="me-2 text-primary" /> Accedés a:
               </h4>
-              <Row className="g-3 mb-5">
+              <Row className="g-3">
                 <Col md={6}>
                   <Card className="h-100 text-center p-3 border shadow-sm">
                     <TbPackageImport className="fs-1 text-primary mx-auto mb-2" />
@@ -86,65 +108,42 @@ const Importador = () => {
                   </Card>
                 </Col>
               </Row>
+            </Col>
 
-              {/* Beneficios principales */}
+            <Col lg={6}>
               <h4 className="fw-bold mb-4">
                 <FaRocket className="me-2 text-primary" /> Beneficios principales:
               </h4>
               <Row className="g-3">
                 <Col md={6}>
-                  <Card className="h-100 p-3 border shadow-sm">
+                  <Card className="h-100 text-center p-3 border shadow-sm">
                     <FaArrowUp className="fs-1 text-primary mx-auto mb-2" />
                     <Card.Title className="fw-bold text-center fs-6">Ampliás tu negocio</Card.Title>
                     <Card.Text className="small">Accedés a productos que no se fabrican en el país o que tienen mejores precios en el exterior.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={6}>
-                  <Card className="h-100 p-3 border shadow-sm">
+                  <Card className="h-100 text-center p-3 border shadow-sm">
                     <FaUser className="fs-1 text-primary mx-auto mb-2" />
                     <Card.Title className="fw-bold text-center fs-6">Competitividad</Card.Title>
                     <Card.Text className="small">Ofrecés variedad, calidad y costos más bajos frente a tu competencia.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={6}>
-                  <Card className="h-100 p-3 border shadow-sm">
+                  <Card className="h-100 text-center p-3 border shadow-sm">
                     <FaCubes className="fs-1 text-primary mx-auto mb-2" />
                     <Card.Title className="fw-bold text-center fs-6">Escalabilidad</Card.Title>
                     <Card.Text className="small">Una vez inscripto, no tenés límites para seguir creciendo.</Card.Text>
                   </Card>
                 </Col>
                 <Col md={6}>
-                  <Card className="h-100 p-3 border shadow-sm">
+                  <Card className="h-100 text-center p-3 border shadow-sm">
                     <FaFileContract className="fs-1 text-primary mx-auto mb-2" />
                     <Card.Title className="fw-bold text-center fs-6">Legalidad y Respaldo</Card.Title>
                     <Card.Text className="small">Operás dentro del marco normativo, evitando sanciones y problemas aduaneros.</Card.Text>
                   </Card>
                 </Col>
               </Row>
-            </Col>
-
-            <Col lg={6} className="d-flex align-items-center justify-content-center">
-              {/* PENDIENTE: reemplazar por video explicativo */}
-              <div
-                style={{
-                  width: '100%',
-                  aspectRatio: '16/9',
-                  background: '#1a1a2e',
-                  borderRadius: '12px',
-                  border: '2px dashed #0d6efd',
-                  color: '#0d6efd',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
-                  textAlign: 'center',
-                  padding: '2rem'
-                }}
-                className="mt-4 mt-lg-0"
-              >
-                VIDEO EXPLICATIVO — PENDIENTE
-              </div>
             </Col>
           </Row>
         </Container>

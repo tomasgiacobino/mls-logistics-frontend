@@ -2,6 +2,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import fondo from '../assets/images/Fondos/f1.jpg';
 import ReactGA from 'react-ga4';
+import CursoTabs from '../components/CursoTabs';
+import mp from '../assets/images/MP/mp1.png';
 
 const whatsappNumber = '+5493492213436';
 
@@ -124,139 +126,8 @@ const Curso = () => {
           </Row>
         </Container>
       </section>
-
-      {/* 3.9.4 Diferencial */}
-      <section className="py-5 bg-light">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <h2 className="fw-bold text-primary text-center mb-4">Por qué el Programa Integral es distinto</h2>
-              <ul className="list-unstyled">
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Acompañamiento real durante tu proceso de importación, no solo teoría.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Seguimiento durante tus primeros pasos, donde se cometen el 80% de los errores.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Soporte para validar decisiones clave antes de invertir.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Respaldo en los momentos críticos de la operación.</span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* 3.9.5 Beneficios estratégicos */}
-      <section className="py-5 bg-white">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <h2 className="fw-bold text-primary text-center mb-4">Lo que vas a lograr</h2>
-              <ul className="list-unstyled">
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Aprendés y aplicás en simultáneo: no te quedás solo en la teoría.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Reducís al mínimo el margen de error.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Tenés claridad antes de invertir, no después.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Avanzás más rápido y con más seguridad.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Tomás cada decisión con respaldo profesional.</span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* 3.9.6 ¿Por qué elegirnos? */}
-      <section className="py-5 bg-light">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <h2 className="fw-bold text-primary text-center mb-4">¿Por qué elegirnos?</h2>
-              <p className="text-center fst-italic mb-4">Porque no solo vendemos información, acompañamos decisiones.</p>
-              <ul className="list-unstyled">
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Experiencia real y verificable en comercio internacional.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Explicaciones simples y aplicables, no teoría de manual.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Acompañamiento personalizado en cada caso.</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Enfoque en rentabilidad, no solo en "saber operar".</span>
-                </li>
-                <li className="d-flex align-items-start gap-3 mb-3">
-                  <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
-                  <span>Cientos de clientes que ya arrancaron con nosotros.</span>
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
-      {/* 3.9.7 Lo que podés lograr */}
-      <section className="py-5 bg-white">
-        <Container>
-          <Row className="justify-content-center g-4">
-            <Col lg={8}>
-              <h2 className="fw-bold text-primary text-center mb-4">Lo que podés lograr</h2>
-              <Row className="g-4">
-                <Col md={6}>
-                  <Card className="h-100 p-4 border shadow-sm text-center">
-                    <FaCheckCircle className="text-primary fs-3 mx-auto mb-3" />
-                    <Card.Text>Importar con seguridad desde la primera operación.</Card.Text>
-                  </Card>
-                </Col>
-                <Col md={6}>
-                  <Card className="h-100 p-4 border shadow-sm text-center">
-                    <FaCheckCircle className="text-primary fs-3 mx-auto mb-3" />
-                    <Card.Text>Reducir costos comprando en el exterior.</Card.Text>
-                  </Card>
-                </Col>
-                <Col md={6}>
-                  <Card className="h-100 p-4 border shadow-sm text-center">
-                    <FaCheckCircle className="text-primary fs-3 mx-auto mb-3" />
-                    <Card.Text>Crear nuevas oportunidades de negocio.</Card.Text>
-                  </Card>
-                </Col>
-                <Col md={6}>
-                  <Card className="h-100 p-4 border shadow-sm text-center">
-                    <FaCheckCircle className="text-primary fs-3 mx-auto mb-3" />
-                    <Card.Text>Escalar tu empresa con operaciones internacionales sostenidas.</Card.Text>
-                  </Card>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      
+      <CursoTabs />
 
       {/* 3.9.8 Cierre y CTA */}
       <section className="py-5 bg-primary text-white text-center">
@@ -267,22 +138,31 @@ const Curso = () => {
               <p className="lead mb-5">
                 Podés seguir dudando o podés empezar con la información y el acompañamiento correcto.
               </p>
-              <div className="d-flex flex-column flex-md-row gap-3 justify-content-center">
-                {/* PENDIENTE: confirmar precio real con el cliente antes de pasar a producción */}
+              <div className="d-flex flex-column flex-md-row justify-content-center gap-4 mt-2">
                 <button
-                  className="btn btn-light text-primary fw-bold px-4 py-3"
+                  className="btn fw-bold px-4 py-3 d-flex align-items-center justify-content-center gap-3"
                   onClick={handleBuyClick}
+                  style={{ background: 'white', borderRadius: '12px', minWidth: '280px' }}
                 >
-                  <span className="d-none d-sm-inline">QUIERO MI PROGRAMA INTEGRAL DE ASESORAMIENTO PARA IMPORTADORES</span>
-                  <span className="d-inline d-sm-none">QUIERO MI PROGRAMA INTEGRAL</span>
+                  <img
+                    src={mp}
+                    alt="MercadoPago"
+                    style={{ height: '50px' }}
+                  />
+                  <span className="text-black" style={{ fontSize: '1.1rem' }}>
+                    <span className="d-none d-sm-inline">Quiero mi programa integral</span>
+                    <span className="d-inline d-sm-none">Quiero mi programa integral</span>
+                  </span>
                 </button>
+
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hola, quiero más información sobre el Programa Integral de Capacitación en Importaciones.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-outline-light fw-bold px-4 py-3"
+                  className="btn fw-bold px-4 py-3 d-flex align-items-center justify-content-center gap-2 text-white"
+                  style={{ background: '#25D366', borderRadius: '12px', minWidth: '220px' }}
                 >
-                  <FaWhatsapp className="me-2" />
+                  <FaWhatsapp style={{ fontSize: '1.4rem' }} />
                   Consultar por WhatsApp
                 </a>
               </div>

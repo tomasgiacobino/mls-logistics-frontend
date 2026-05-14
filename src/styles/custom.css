@@ -255,6 +255,13 @@ body, p, li, span, input, button {
   z-index: 2;
 }
 
+@media (min-width: 992px) {
+  .col-divisor {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 2px 0 6px -2px rgba(0,0,0,0.08);
+  }
+}
+
 /* ==========================================
    EXPORTACION
    ========================================== */

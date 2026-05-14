@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import heroBarco from '../assets/videos/fondoheroComp.mp4'
+import heroBarco from '../assets/videos/fondohero.mp4'
 
 const Hero = () => {
     return (
@@ -16,7 +16,7 @@ const Hero = () => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 63%',
+            objectPosition: 'center 80%',
             zIndex: 0
           }}
         >

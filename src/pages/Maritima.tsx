@@ -46,28 +46,47 @@ const CotizacionMaritima = () => {
         className="py-5 text-white hero-maritimo d-flex justify-content-center align-items-center" 
         style={{ backgroundImage: `url(${fondoBarco})` }}
       >
-        <div className='maritimo-content'>
+        <div className='maritimo-content w-100'>
           <Container>
-            <Row className="align-items-center">
-              <Col lg={8} className="text-center text-lg-start">
+            <Row className="align-items-center g-4">
+              <Col lg={6}>
                 <h1 className="fw-bold">
                   Cotizá tu <span className="text-primary">importación Marítima</span> 🚢
                 </h1>
                 <p className="lead mt-3 fs-5">
-                  ¿Querés importar vía marítima? Es ideal para productos de gran peso y dimensiones.
+                  Ideal para productos de gran peso y volumen, repuestos, maquinarias y rodados.
                 </p>
-                <div className="d-flex flex-wrap gap-5 justify-content-center mt-4 text-info">
-                  <FaFile className="h1 text-primary" />
-                  <FaClipboard className="h1 text-primary" />
-                  <FaShip className="h1 text-primary" />
+                <div className="d-flex flex-wrap gap-5 mt-4 justify-content-center text-primary">
+                  <FaFile className="h1" />
+                  <FaClipboard className="h1" />
+                  <FaShip className="h1" />
+                </div>
+                <div className="p-4 rounded shadow-lg bg-light text-dark mt-4">
+                  <h4 className="fw-bold mb-3">Servicios de Transporte Marítimo</h4>
+                  <p className="mb-0">
+                    Podés importar <span className='fw-bold'>CONTENEDORES COMPLETOS (FCL)</span> o paletizar tu mercancía en un <span className='fw-bold'>CONTENEDOR COMPARTIDO (LCL)</span>.
+                  </p>
                 </div>
               </Col>
-              <Col lg={4} className="mt-4 mt-lg-0 text-center">
-                <div className="p-4 rounded shadow-lg bg-light text-dark">
-                  <h4 className="fw-bold mb-3">Servicios de Transporte Marítimo</h4>
-                  <p>
-                    Podés importar <span className='fw-bold'> CONTENEDORES COMPLETOS (FCL) </span> o paletizar tu mercancía en un <span className='fw-bold'> CONTENEDOR COMPARTIDO (LCL) </span>.
-                  </p>
+              <Col lg={6}>
+                <div
+                  style={{
+                    width: '100%',
+                    aspectRatio: '16/9',
+                    background: 'rgba(26,26,46,0.8)',
+                    borderRadius: '12px',
+                    border: '2px dashed #0d6efd',
+                    color: '#0d6efd',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 'bold',
+                    fontSize: '1.1rem',
+                    textAlign: 'center',
+                    padding: '2rem'
+                  }}
+                >
+                  VIDEO PRESENTACIÓN — PENDIENTE
                 </div>
               </Col>
             </Row>
