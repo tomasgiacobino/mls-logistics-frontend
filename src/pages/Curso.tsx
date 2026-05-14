@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 import fondo from '../assets/images/Fondos/f1.jpg';
 import ReactGA from 'react-ga4';
