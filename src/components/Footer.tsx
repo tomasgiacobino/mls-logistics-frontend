@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import logo from '../assets/images/logos/Recurso 15.png';
-import logoMM from '../assets/images/logos/Recurso 5.png';
 
 const Footer = () => {
   return (
@@ -21,15 +20,6 @@ const Footer = () => {
               <p className="lead mb-0">
                 Tu aliado estratégico en soluciones logísticas y de comercio exterior.
               </p>
-            </div>
-
-
-            <div>
-              <img
-                src={logoMM}
-                alt="Logo MM Importaciones"
-                height="90"
-              />
             </div>
           </Col>
         </Row>
