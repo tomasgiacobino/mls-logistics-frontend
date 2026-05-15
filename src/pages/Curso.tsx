@@ -24,12 +24,12 @@ const handleBuyClick = async () => {
 const Curso = () => {
   return (
     <>
-      {/* 3.9.1 Hero */}
+      {/* Hero */}
       <section className="py-5 curso-section" style={{ backgroundImage: `url(${fondo})` }}>
         <div className='curso-content'>
           <Container>
-            <Row className="align-items-center">
-              <Col lg={12} className="text-white text-center">
+            <Row className="align-items-center g-4">
+              <Col lg={6} className="text-white">
                 <h1 className="fw-bold display-4 mb-4">Aprendé a importar con claridad, estrategia y sin errores</h1>
                 <p className="lead mb-3">
                   Te acompañamos con herramientas reales y asesoramiento profesional para que puedas importar de forma segura, rentable y con un camino claro desde el primer paso.
@@ -42,17 +42,37 @@ const Curso = () => {
                 </p>
                 <p className="fst-italic">Desde aprender lo básico hasta avanzar con tu proyecto con acompañamiento directo.</p>
               </Col>
+              <Col lg={6}>
+                <div
+                  style={{
+                    width: '100%',
+                    aspectRatio: '16/9',
+                    borderRadius: '12px',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/bboyQinRNz4"
+                    title="Programa Integral de Importaciones"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </Col>
             </Row>
           </Container>
         </div>
       </section>
 
-      {/* 3.9.2 ¿Te pasa esto? */}
+      {/* ¿Te pasa esto? + ¿Qué incluye el programa? */}
       <section className="py-5 bg-light">
         <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <h2 className="fw-bold text-primary text-center mb-4">¿Te pasa esto?</h2>
+          <Row className="g-5">
+            <Col lg={6}>
+              <h2 className="fw-bold text-primary mb-4">¿Te pasa esto?</h2>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-3">
                   <FaCheckCircle className="text-primary fs-5 mt-1 flex-shrink-0" />
@@ -75,17 +95,10 @@ const Curso = () => {
                   <span>Sentís que es todo más complicado de lo que debería ser.</span>
                 </li>
               </ul>
-              <p className="fw-bold text-center mt-4 fs-5">No estás solo. Y tiene solución.</p>
+              <p className="fw-bold mt-4 fs-5">No estás solo. Y tiene solución.</p>
             </Col>
-          </Row>
-        </Container>
-      </section>
 
-      {/* 3.9.3 Qué incluye el programa */}
-      <section className="py-5 bg-white">
-        <Container>
-          <Row className="align-items-center">
-            <Col lg={6}>
+            <Col lg={6} className="border-start border-2 border-light-subtle ps-5">
               <h2 className="fw-bold text-primary mb-4">¿Qué incluye el programa?</h2>
               <p className="mb-4">El programa se organiza en tres etapas complementarias. No se contrata de a una: el valor está en el combo.</p>
               <div className="mb-4">
@@ -101,35 +114,13 @@ const Curso = () => {
                 <p>Seguimiento de cada etapa: compra, logística, aduana y entrega. Soporte permanente para resolver imprevistos y coordinar con todos los actores. No te dejamos solo hasta que el producto está en tus manos.</p>
               </div>
             </Col>
-            <Col lg={6}>
-              {/* PENDIENTE: reemplazar por video de Leo en formato 16:9 */}
-              <div
-                style={{
-                  width: '100%',
-                  aspectRatio: '16/9',
-                  background: '#1a1a2e',
-                  borderRadius: '12px',
-                  border: '2px dashed #0d6efd',
-                  color: '#0d6efd',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
-                  textAlign: 'center',
-                  padding: '2rem'
-                }}
-              >
-                VIDEO LEO — PENDIENTE
-              </div>
-            </Col>
           </Row>
         </Container>
       </section>
-      
+
       <CursoTabs />
 
-      {/* 3.9.8 Cierre y CTA */}
+      {/* Cierre y CTA */}
       <section className="py-5 bg-primary text-white text-center">
         <Container>
           <Row className="justify-content-center">
@@ -140,7 +131,7 @@ const Curso = () => {
               </p>
               <div className="d-flex flex-column flex-md-row justify-content-center gap-4 mt-2">
                 <button
-                  className="btn fw-bold px-4 py-3 d-flex align-items-center justify-content-center gap-3"
+                  className="btn px-4 py-3 d-flex align-items-center justify-content-center gap-3 btn-mp-hover"
                   onClick={handleBuyClick}
                   style={{ background: 'white', borderRadius: '12px', minWidth: '280px' }}
                 >
@@ -149,18 +140,16 @@ const Curso = () => {
                     alt="MercadoPago"
                     style={{ height: '50px' }}
                   />
-                  <span className="text-black" style={{ fontSize: '1.1rem' }}>
-                    <span className="d-none d-sm-inline">Quiero mi programa integral</span>
-                    <span className="d-inline d-sm-none">Quiero mi programa integral</span>
+                  <span className="text-black" style={{ fontWeight: 900, fontSize: '1.25rem' }}>
+                    Quiero mi programa integral
                   </span>
                 </button>
-
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hola, quiero más información sobre el Programa Integral de Capacitación en Importaciones.')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn fw-bold px-4 py-3 d-flex align-items-center justify-content-center gap-2 text-white"
-                  style={{ background: '#25D366', borderRadius: '12px', minWidth: '220px' }}
+                  className="btn px-4 py-3 d-flex align-items-center justify-content-center gap-2 text-white btn-wpp-hover"
+                  style={{ background: '#25D366', borderRadius: '12px', minWidth: '220px', fontWeight: 900, fontSize: '1.25rem' }}
                 >
                   <FaWhatsapp style={{ fontSize: '1.4rem' }} />
                   Consultar por WhatsApp

@@ -49,10 +49,10 @@ const AsesoriaManu = () => {
                 href="https://calendar.app.google/4VcAFfjMj1GLnhxx8"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-light text-primary fw-bold px-4 py-3 w-100"
-                style={{ maxWidth: '360px' }}
+                className="btn btn-light text-primary px-4 py-3 w-100"
+                style={{ maxWidth: '380px', fontWeight: 900, fontSize: '1.2rem' }}
               >
-                <FaCalendarAlt className="me-2" />
+                <FaCalendarAlt className="me-2 mb-1 fs-3" />
                 Reservá tu asesoría gratuita
               </a>
             </div>

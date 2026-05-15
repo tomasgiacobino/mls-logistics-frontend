@@ -74,7 +74,7 @@ const CursoTabs = () => {
                   </button>
                 ))}
               </div>
-              <ul className="list-unstyled ps-2">
+              <ul key={activeTab} className="list-unstyled ps-2 tab-content-animated">
                 {activeContent?.items.map((item, i) => (
                   <li key={i} className="d-flex align-items-start gap-3 mb-3">
                     {activeContent.icon}

@@ -96,9 +96,10 @@ const WhatsappForm: React.FC<WhatsappFormProps> = ({
                     <Button
                       variant="success"
                       onClick={handleSendMessage}
-                      className="fw-bold p-3"
+                      className="p-3"
+                      style={{ fontWeight: 900, fontSize: '1.1rem' }}
                     >
-                      <FaWhatsapp className="me-2" />
+                      <FaWhatsapp className="me-2 mb-1 fs-3" />
                       Generar mensaje de cotización
                     </Button>
                   </div>

@@ -10,6 +10,7 @@ import FailurePage from './pages/MP/FailurePage';
 import PendingPage from './pages/MP/PendingPage';
 
 import ReactGA from 'react-ga4';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 // PENDIENTE: reemplazar 'G-XXXXXXXXXX' con el ID real del cliente
 ReactGA.initialize('G-XXXXXXXXXX');
@@ -23,7 +24,6 @@ const Importador = React.lazy(() => import('./pages/Importador'));
 const Exportacion = React.lazy(() => import('./pages/Exportacion'));
 const AgenteDeCompras = React.lazy(() => import('./pages/AgenteDeCompras'));
 const GestionComex = React.lazy(() => import('./pages/GestionComex'));
-// ... y las otras páginas que creaste
 
 function App() {
   return (
@@ -44,6 +44,29 @@ function App() {
           <Route path="/pending" element={<PendingPage />} />
         </Routes>
       </Suspense>
+      <a
+        href="https://wa.me/5493492213436"
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '24px',
+          right: '24px',
+          background: '#25D366',
+          color: 'white',
+          borderRadius: '50%',
+          width: '56px',
+          height: '56px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '1.8rem',
+          zIndex: 9999,
+          boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
+        }}
+      >
+        <FaWhatsapp />
+      </a>
       <Footer />
     </>
   );

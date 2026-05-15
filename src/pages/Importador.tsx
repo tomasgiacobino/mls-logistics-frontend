@@ -36,33 +36,26 @@ const Importador = () => {
                 <div className="d-flex justify-content-center mt-3">
                   <Button
                     variant="primary"
-                    className="fw-bold px-4 py-3"
+                    className="px-4 py-3"
                     onClick={handleWhatsapp}
+                    style={{ fontWeight: 900, fontSize: '1.1rem' }}
                   >
-                    <FaWhatsapp className="me-2 fs-5" />
+                    <FaWhatsapp className="me-2 fs-3 mb-1" />
                     Hablar con un asesor
                   </Button>
                 </div>
               </Col>
               <Col lg={6}>
-                <div
-                  style={{
-                    width: '100%',
-                    aspectRatio: '16/9',
-                    background: 'rgba(26,26,46,0.8)',
-                    borderRadius: '12px',
-                    border: '2px dashed #0d6efd',
-                    color: '#0d6efd',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontWeight: 'bold',
-                    fontSize: '1.1rem',
-                    textAlign: 'center',
-                    padding: '2rem'
-                  }}
-                >
-                  VIDEO EXPLICATIVO — PENDIENTE
+                <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden' }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/_EK2h4bt3Kg"
+                    title="Video Explicativo"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </Col>
             </Row>

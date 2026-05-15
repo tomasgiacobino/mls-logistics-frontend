@@ -18,9 +18,9 @@ const CierreSection = () => {
             <a
               href="https://calendar.app.google/4VcAFfjMj1GLnhxx8"
               target='_blank'
-              className="btn btn-primary fw-bold px-4 py-2 fs-5"
+              className="btn btn-primary fw-bold px-4 py-2 fs-5 btn-cta"
             >
-              <FaCalendarAlt className="me-2" />
+              <FaCalendarAlt className="me-2 mb-1 fs-3" />
               Reservá tu asesoría gratuita
             </a>
           </Col>

@@ -74,25 +74,16 @@ const CotizacionAerea = () => {
 
                   <Row className="g-4 align-items-center mt-2">
                       <Col lg={6}>
-                          <div
-                              style={{
-                                  width: '100%',
-                                  aspectRatio: '16/9',
-                                  background: 'rgba(26,26,46,0.8)',
-                                  borderRadius: '12px',
-                                  border: '2px dashed #0d6efd',
-                                  color: '#0d6efd',
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center',
-                                  fontWeight: 'bold',
-                                  fontSize: '1.1rem',
-                                  textAlign: 'center',
-                                  padding: '2rem'
-                              }}
-                          >
-                              VIDEO DESPACHO AÉREO FORMAL — PENDIENTE
-                          </div>
+                        <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden' }}>
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Z7laaUanl84"
+                            title="Video Despacho Aéreo Formal"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
                       </Col>
                       <Col lg={6}>
                           <div className="d-flex flex-column gap-3">
@@ -169,7 +160,8 @@ const CotizacionAerea = () => {
                 <a
                   href={GuiaImportacionAereaPDF}
                   download="Mini_Guia_Importacion_Aerea_MLS.pdf"
-                  className="btn btn-outline-primary fw-bold p-3"
+                  className="btn btn-outline-primary p-3"
+                  style={{ fontWeight: 900, fontSize: '1.1rem' }}
                 >
                   <FaDownload className="me-2" />
                   Descargar Mini Guía de Importación Aérea

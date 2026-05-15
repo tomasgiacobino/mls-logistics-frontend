@@ -45,9 +45,11 @@ body, p, li, span, input, button {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-hover:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+@media (min-width: 992px) {
+  .card-hover:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
 }
 
 /* ==========================================
@@ -167,6 +169,32 @@ body, p, li, span, input, button {
 
 .course-card-content:hover {
   transform: scale(1.1);
+}
+
+.tab-content-animated {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (min-width: 992px) {
+  .btn-mp-hover:hover {
+    background-color: #e8f0fe;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .btn-wpp-hover:hover {
+    background-color: #1db954;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
 }
 
 /* ==========================================

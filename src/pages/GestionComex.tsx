@@ -16,25 +16,38 @@ const GestionComex = () => {
     <>
       {/* Hero */}
       <section className="py-5 hero-gestion text-white d-flex justify-content-center align-items-center" style={{ backgroundImage: `url(${fondoGestion})` }}>
-        <div className='gestion-content'>
+        <div className='gestion-content w-100'>
           <Container>
-            <Row className="justify-content-center text-center">
-              <Col lg={8}>
-                <h1 className="fw-bold display-4 mb-3">Tu departamento de comercio exterior</h1>
+            <Row className="align-items-center g-4">
+              <Col lg={6}>
+                <h1 className="fw-bold display-4 mb-3">Tu departamento de <span className="fw-bold display-4 text-primary">comercio exterior</span></h1>
                 <p className="lead">
                   No todas las empresas tienen un área de comex propia. Y no deberían necesitarla para operar de forma profesional. Nos integramos como tu equipo: gestionamos importaciones y exportaciones, coordinamos con todos los actores del proceso y te mantenemos informado en cada etapa.
                 </p>
+              </Col>
+              <Col lg={6}>
+                <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden' }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/JoEKtFNh0_E"
+                    title="Video Gestión Comex"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </Col>
             </Row>
           </Container>
         </div>
       </section>
 
-      {/* Lo que gestionamos + Video */}
+      {/* Lo que gestionamos */}
       <section className="py-5 bg-light text-dark">
         <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
+          <Row className="justify-content-center">
+            <Col lg={8}>
               <h3 className="fw-bold text-primary mb-4">Lo que gestionamos por vos:</h3>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start gap-3 mb-3">
@@ -65,35 +78,13 @@ const GestionComex = () => {
               <p className="fw-bold fst-italic mt-4">Tenés todo el músculo de un departamento de comercio exterior. Sin tener que armarlo.</p>
               <Button
                 variant="success"
-                className="fw-bold mt-3 px-4 py-3"
+                className="mt-3 px-4 py-3"
                 onClick={handleWhatsapp}
+                style={{ fontWeight: 900, fontSize: '1.1rem' }}
               >
-                <FaWhatsapp className="me-2 fs-5" />
+                <FaWhatsapp className="me-2 fs-3 mb-1" />
                 Conocé el plan para tu empresa
               </Button>
-            </Col>
-            <Col lg={6} className="d-flex align-items-center justify-content-center">
-              {/* PENDIENTE: reemplazar por video explicativo */}
-              <div
-                className="mt-4 mt-lg-0"
-                style={{
-                  width: '100%',
-                  aspectRatio: '16/9',
-                  background: '#1a1a2e',
-                  borderRadius: '12px',
-                  border: '2px dashed #0d6efd',
-                  color: '#0d6efd',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 'bold',
-                  fontSize: '1.1rem',
-                  textAlign: 'center',
-                  padding: '2rem'
-                }}
-              >
-                VIDEO EXPLICATIVO — PENDIENTE
-              </div>
             </Col>
           </Row>
         </Container>

@@ -35,24 +35,16 @@ const Exportacion = () => {
                 </p>
               </Col>
               <Col lg={6}>
-                <div
-                  style={{
-                    width: '100%',
-                    aspectRatio: '16/9',
-                    background: 'rgba(26,26,46,0.8)',
-                    borderRadius: '12px',
-                    border: '2px dashed #0d6efd',
-                    color: '#0d6efd',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontWeight: 'bold',
-                    fontSize: '1.1rem',
-                    textAlign: 'center',
-                    padding: '2rem'
-                  }}
-                >
-                  VIDEO PRESENTACIÓN — PENDIENTE
+                <div style={{ width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden' }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/gFnr5oJzZdk"
+                    title="Video Presentación"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </Col>
             </Row>
@@ -123,6 +115,7 @@ const Exportacion = () => {
                   variant="success"
                   onClick={handleSendMessage}
                   className="fw-bold p-3"
+                  style={{ fontWeight: 900, fontSize: '1.1rem' }}
                 >
                   <FaWhatsapp className="me-2 fs-3" />
                   Envía un mensaje de consulta

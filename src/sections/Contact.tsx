@@ -7,7 +7,7 @@ const Contact = () => {
   const [showCopyMessage, setShowCopyMessage] = useState(false);
   const whatsappMessage = encodeURIComponent('Hola, estoy interesado en importar con ustedes. ¿Podrían brindarme más información sobre sus servicios?');
   const whatsappNumber = '+5493492213436';
-  const emailAddress = 'info@mmimportaciones.net';
+  const emailAddress = 'info@mlscomex.com';
 
   const handleWhatsappClick = () => {
     window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
@@ -56,8 +56,9 @@ const Contact = () => {
                   size="lg"
                   className="w-100"
                   onClick={handleWhatsappClick}
+                  style={{ whiteSpace: 'nowrap', fontWeight: 900, fontSize: '1.25rem' }}
                 >
-                  <FaWhatsapp className="me-2" /> Contáctanos por WhatsApp
+                  <FaWhatsapp className="me-2 mb-1 fs-3" /> Contáctanos por WhatsApp
                 </Button>
               </Col>
               <Col xs={12} sm={6} md={5} lg={4}>
@@ -71,7 +72,7 @@ const Contact = () => {
                       value={emailAddress}
                       readOnly
                       className="bg-white text-dark border-primary"
-                      style={{ fontSize: '0.98rem'}}
+                      style={{ fontSize: '1.25rem'}}
                     />
                     <Button variant="outline-primary" onClick={copyEmailToClipboard}>
                       <FaCopy />
