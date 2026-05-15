@@ -201,6 +201,13 @@ body, p, li, span, input, button {
   }
 }
 
+@media (min-width: 992px) {
+  .col-border-start {
+    border-left: 2px solid #dee2e6;
+    padding-left: 2rem;
+  }
+}
+
 /* ==========================================
    AEREA
    ========================================== */

@@ -70,7 +70,7 @@ const Curso = () => {
       {/* ¿Te pasa esto? + ¿Qué incluye el programa? */}
       <section className="py-5 bg-light">
         <Container>
-          <Row className="g-5">
+          <Row className="g-4">
             <Col lg={6}>
               <h2 className="fw-bold text-primary mb-4">¿Te pasa esto?</h2>
               <ul className="list-unstyled">
@@ -98,7 +98,7 @@ const Curso = () => {
               <p className="fw-bold mt-4 fs-5">No estás solo. Y tiene solución.</p>
             </Col>
 
-            <Col lg={6} className="border-start border-2 border-light-subtle ps-5">
+            <Col lg={6} className="col-border-start">
               <h2 className="fw-bold text-primary mb-4">¿Qué incluye el programa?</h2>
               <p className="mb-4">El programa se organiza en tres etapas complementarias. No se contrata de a una: el valor está en el combo.</p>
               <div className="mb-4">

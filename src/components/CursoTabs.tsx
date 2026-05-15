@@ -6,7 +6,7 @@ const tabs = [
   {
     id: 'diferencial',
     label: 'Por qué es distinto',
-    icon: <FaStar className="me-2 text-primary" />,
+    icon: <FaStar className="text-primary flex-shrink-0" style={{ fontSize: '1rem' }} />,
     items: [
       'Acompañamiento real durante tu proceso de importación, no solo teoría.',
       'Seguimiento durante tus primeros pasos, donde se cometen el 80% de los errores.',
@@ -17,7 +17,7 @@ const tabs = [
   {
     id: 'logras',
     label: 'Lo que lográs',
-    icon: <FaRocket className="me-2 text-primary" />,
+    icon: <FaRocket className="text-primary flex-shrink-0" style={{ fontSize: '1rem' }} />,
     items: [
       'Aprendés y aplicás en simultáneo: no te quedás solo en la teoría.',
       'Reducís al mínimo el margen de error.',
@@ -33,7 +33,7 @@ const tabs = [
   {
     id: 'elegirnos',
     label: 'Por qué elegirnos',
-    icon: <FaShieldAlt className="me-2 text-primary" />,
+    icon: <FaShieldAlt className="text-primary flex-shrink-0" style={{ fontSize: '1rem' }} />,
     items: [
       'Experiencia real y verificable en comercio internacional.',
       'Explicaciones simples y aplicables, no teoría de manual.',
