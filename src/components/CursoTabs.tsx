@@ -92,8 +92,8 @@ const CursoTabs = () => {
                     className="w-100 d-flex justify-content-between align-items-center p-3 fw-bold bg-white border-0 text-start"
                     onClick={() => setOpenAccordion(openAccordion === tab.id ? null : tab.id)}
                   >
-                    <span>{tab.icon}{tab.label}</span>
-                    {openAccordion === tab.id ? <FaChevronUp /> : <FaChevronDown />}
+                    <span className="text-primary">{tab.label}</span>
+                    {openAccordion === tab.id ? <FaChevronUp className="flex-shrink-0 ms-2" /> : <FaChevronDown className="flex-shrink-0 ms-2" />}
                   </button>
                   {openAccordion === tab.id && (
                     <ul className="list-unstyled p-3 mb-0">
