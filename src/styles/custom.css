@@ -152,6 +152,16 @@ body, p, li, span, input, button {
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .contact-btn-wpp {
+    font-size: 1rem !important;
+    white-space: nowrap;
+  }
+  .contact-email-input {
+    font-size: 1rem !important;
+  }
+}
+
 /* ==========================================
    CURSO
    ========================================== */

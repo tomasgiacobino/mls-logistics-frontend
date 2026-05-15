@@ -56,7 +56,7 @@ const Contact = () => {
                   size="lg"
                   className="w-100 h-100 contact-btn-wpp"
                   onClick={handleWhatsappClick}
-                  style={{ fontWeight: 900, fontSize: '1rem' }}
+                  style={{ fontWeight: 900, fontSize: '1.25rem' }}
                 >
                   <FaWhatsapp className="me-2 mb-1" /> Contáctanos por WhatsApp
                 </Button>
@@ -72,7 +72,7 @@ const Contact = () => {
                       value={emailAddress}
                       readOnly
                       className="bg-white text-dark border-primary contact-email-input"
-                      style={{ fontSize: '1rem' }}
+                      style={{ fontSize: '1.25rem' }}
                     />
                     <Button variant="outline-primary" onClick={copyEmailToClipboard}>
                       <FaCopy />
