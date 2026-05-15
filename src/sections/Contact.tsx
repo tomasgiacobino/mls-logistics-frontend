@@ -49,30 +49,30 @@ const Contact = () => {
             <p className="text-muted mb-5">
               ¿Listo para empezar? Contáctanos y obtén una cotización en menos de 24 horas.
             </p>
-            <Row className="justify-content-center">
-              <Col xs={12} sm={6} md={5} lg={4} className="mb-3 mb-sm-0">
+            <Row className="justify-content-center align-items-stretch g-3">
+              <Col xs={12} md={5} lg={4}>
                 <Button
                   variant="success"
                   size="lg"
-                  className="w-100"
+                  className="w-100 h-100 contact-btn-wpp"
                   onClick={handleWhatsappClick}
-                  style={{ whiteSpace: 'nowrap', fontWeight: 900, fontSize: '1.25rem' }}
+                  style={{ fontWeight: 900, fontSize: '1rem' }}
                 >
-                  <FaWhatsapp className="me-2 mb-1 fs-3" /> Contáctanos por WhatsApp
+                  <FaWhatsapp className="me-2 mb-1" /> Contáctanos por WhatsApp
                 </Button>
               </Col>
-              <Col xs={12} sm={6} md={5} lg={4}>
+              <Col xs={12} md={5} lg={4}>
                 <div className="email-copy-container">
                   <InputGroup size="lg" className="w-100">
-                    <InputGroup.Text className="bg-primary text-white border-primary">
+                    <InputGroup.Text className="bg-primary text-white border-primary px-2">
                       <FaEnvelope />
                     </InputGroup.Text>
                     <Form.Control
                       type="text"
                       value={emailAddress}
                       readOnly
-                      className="bg-white text-dark border-primary"
-                      style={{ fontSize: '1.25rem'}}
+                      className="bg-white text-dark border-primary contact-email-input"
+                      style={{ fontSize: '1rem' }}
                     />
                     <Button variant="outline-primary" onClick={copyEmailToClipboard}>
                       <FaCopy />
